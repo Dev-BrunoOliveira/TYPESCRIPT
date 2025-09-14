@@ -1,0 +1,265 @@
+/* src/App.css (Versão ajustada) */
+
+/* 1. FONTES */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap");
+
+/* 2. RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #111;
+  color: #eee;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+/* 3. HERO */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 1rem;
+  background-color: #111;
+  z-index: 3;
+  position: relative;
+}
+
+.hero h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(2.5rem, 8vw, 8rem);
+  font-weight: 700;
+  text-align: center;
+  opacity: 0;
+  animation: fadeInUp 1s ease-out 0.5s forwards;
+}
+
+/* 4. GALERIA DE PROJETOS */
+.projects-gallery {
+  position: relative;
+  z-index: 1;
+}
+
+.projects-container {
+  display: flex;
+  flex-direction: column; /* cada card embaixo do outro */
+  gap: 8rem; /* espaço entre cards */
+  padding: 6rem 2rem;
+  background-color: #111;
+}
+
+.project-slide {
+  min-height: 100vh; /* cada card ocupa pelo menos uma tela */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide-content {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 2rem;
+}
+
+.project-details {
+  flex: 1;
+  max-width: 400px;
+}
+.project-details h2 {
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+}
+.project-details .project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+.project-details .project-tags .tag {
+  background-color: #222;
+  border: 1px solid #333;
+  padding: 0.3rem 0.8rem;
+  border-radius: 99px;
+  font-size: 0.8rem;
+}
+.btn-project {
+  background-color: #00bfff;
+  color: #111;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 700;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+.btn-project:hover {
+  transform: scale(1.05);
+}
+.project-image {
+  flex: 1.5;
+  height: 60vh;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+.project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* 5. SEÇÕES ABOUT E CONTACT */
+.about-section,
+.contact-section {
+  position: relative;
+  z-index: 2;
+  background-color: #111;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+  padding: 8rem 2rem;
+  width: 100%;
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  max-width: 1000px;
+}
+.about-text h2,
+.contact-content h2,
+.curriculo h3 {
+  font-size: clamp(2rem, 5vw, 3rem);
+  margin-bottom: 1.5rem;
+}
+.about-text p,
+.contact-content p,
+.curriculo p {
+  color: #aaa;
+  line-height: 1.7;
+}
+.about-photo {
+  flex: 1;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.about-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.techs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+  gap: 1rem;
+  width: 100%;
+  max-width: 800px;
+}
+.card-techs {
+  background-color: #1a1a1a;
+  border: 1px solid #2a2a2a;
+  border-radius: 8px;
+  padding: 1.25rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  transition: transform 0.3s ease;
+}
+.card-techs:hover {
+  transform: translateY(-5px);
+}
+.card-techs img {
+  height: 35px;
+  width: 35px;
+}
+.card-techs span {
+  font-weight: 500;
+  font-size: 0.8rem;
+  color: #ccc;
+}
+.contact-content,
+.curriculo {
+  text-align: center;
+}
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+.social-links a {
+  color: #ccc;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: color 0.3s ease;
+  font-size: 1rem;
+}
+.social-links a:hover {
+  color: #00bfff;
+}
+.btn {
+  background-color: #00bfff;
+  color: #111;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: transform 0.3s ease;
+}
+.btn:hover {
+  transform: scale(1.05);
+}
+
+/* 6. RESPONSIVO */
+@media (max-width: 768px) {
+  .slide-content,
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .project-details {
+    max-width: 100%;
+  }
+  .project-details h2 {
+    font-size: 10vw;
+  }
+  .project-details .project-tags,
+  .social-links {
+    justify-content: center;
+  }
+  .project-image {
+    width: 90vw;
+    height: 50vh;
+  }
+}
