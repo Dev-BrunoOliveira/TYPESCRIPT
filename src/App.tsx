@@ -1,85 +1,22 @@
 // src/App.tsx
 import "./App.css";
+import { motion } from "framer-motion"; // <--- adicione isso
 
+// Array de projetos
 const projects = [
-{
-    title: "Site Tesla",
-    image: "/IMG/TESLA.png",
-    deployLink: "https://tesla-sigma-peach.vercel.app",
-    tags: ["HTML", "CSS", "JavaScript"]
+  {
+    title: "Projeto 1",
+    tags: ["React", "TypeScript"],
+    deployLink: "https://exemplo.com/projeto1",
+    image: "/IMG/projeto1.jpg",
   },
   {
-    title: "Pizzaria Donatello",
-    image: "/IMG/PIZZARIA.png",
-    deployLink: "https://pizzaria-six-gray.vercel.app/",
-    tags: ["React", "Vite", "CSS"]
+    title: "Projeto 2",
+    tags: ["JavaScript", "CSS"],
+    deployLink: "https://exemplo.com/projeto2",
+    image: "/IMG/projeto2.jpg",
   },
-  {
-    title: "Guia de Restaurantes",
-    image: "/IMG/GUIA.png",
-    deployLink: "https://restaurantes-two.vercel.app/",
-    tags: ["HTML", "CSS", "JavaScript"]
-  },
-  {
-    title: "Dinaflix",
-    image: "/IMG/NETFLIX.png",
-    deployLink: "https://dinaflix.vercel.app/",
-    tags: ["HTML", "CSS", "JavaScript"]
-  },
-  {
-    title: "Fila de Editores",
-    image: "/IMG/FILA.png",
-    deployLink: "https://filamaxsystem.vercel.app/",
-    tags: ["React", "Vite", "Firebase"]
-  },
-  {
-    title: "Concurso TJ",
-    image: "/IMG/Concurso.png",
-    deployLink: "https://concurso-nine.vercel.app/",
-    tags: ["HTML", "CSS", "JavaScript"]
-  },
-  {
-    title: "Comunidade de Receitas",
-    image: "/IMG/MANDARECEITAS.png",
-    deployLink: "https://mandareceita.vercel.app/",
-    tags: ["HTML", "CSS", "JavaScript"]
-  },
-  {
-    title: "Loja de Camisetas",
-    image: "/IMG/LARANJODINA.png",
-    deployLink: "https://laranjodina.vercel.app/",
-    tags: ["HTML", "CSS", "JavaScript"]
-  },
-  {
-    title: "Hunter x Hunter",
-    image: "/IMG/hunter.png",
-    deployLink: "https://hunter-nine.vercel.app/",
-    tags: ["HTML", "CSS", "JavaScript"]
-  },
-  {
-    title: "Calculadora de Notas",
-    image: "/IMG/CALCULADORADENOTAS.png",
-    deployLink: "https://calculadora-de-notas-jade.vercel.app/",
-    tags: ["HTML", "CSS", "JavaScript"]
-  },
-  {
-    title: "Conversor de Dólar e Euro",
-    image: "/IMG/Calculadora.png",
-    deployLink: "https://conversor-sigma.vercel.app/",
-    tags: ["HTML", "CSS", "JavaScript"]
-  },
-  {
-    title: "Agendamento Barbearia",
-    image: "/IMG/BARBEARIA.png",
-    deployLink: "https://barbearia-vert-delta.vercel.app/",
-    tags: ["React", "Vite", "CSS"]
-  },
-  {
-    title: "Jogo da Cobrinha",
-    image: "/IMG/SNAKE GAME.png",
-    deployLink: "https://snake-game-eta-weld.vercel.app/",
-    tags: ["HTML", "CSS", "JavaScript"]
-  },
+  // Adicione mais projetos conforme necessário
 ];
 
 function App() {
@@ -87,14 +24,27 @@ function App() {
     <>
       {/* Hero */}
       <section className="hero">
-        <h1>Bruno Oliveira</h1>
+        <motion.h1
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+        >
+          Front-end Bruno Oliveira
+        </motion.h1>
       </section>
 
       {/* Projetos */}
       <section className="projects-gallery">
         <div className="projects-container">
           {projects.map((project, idx) => (
-            <div className="project-slide" key={idx}>
+            <motion.div
+              className="project-slide"
+              key={idx}
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.3 }}
+              transition={{ duration: 0.6, delay: idx * 0.1 }}
+            >
               <div className="slide-content">
                 <div className="project-details">
                   <h2>{project.title}</h2>
@@ -105,7 +55,6 @@ function App() {
                       </span>
                     ))}
                   </div>
-                  {/* <p>{project.description}</p> */}
                   <a
                     href={project.deployLink}
                     target="_blank"
@@ -119,7 +68,7 @@ function App() {
                   <img src={project.image} alt={project.title} />
                 </div>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </section>
@@ -127,38 +76,54 @@ function App() {
       {/* About */}
       <section className="about-section">
         <div className="about-content">
-          <div className="about-photo">
-            <img src="./IMG/20br.jpg" alt="Bruno Oliveira" />
-          </div>
-          <div className="about-text">
-            <h2>About</h2>
-            <p>
-              Sou desenvolvedor front-end com paixão por design e experiências
-              criativas. Este portfólio mostra alguns dos meus projetos mais
-              recentes.
-            </p>
-          </div>
+          <motion.div
+            className="about-photo"
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+          >
+            <img src="/IMG/20br.jpg" alt="Bruno Oliveira" />
+          </motion.div>
+          <motion.div
+            className="about-text"
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+          >
+            <h2>Sobre</h2>
+            <p>… seu texto …</p>
+          </motion.div>
         </div>
       </section>
 
       {/* Contact */}
       <section className="contact-section">
-        <div className="contact-content">
-          <h2>Contact</h2>
-          <p>Me mande um e-mail: bruno@email.com</p>
+        <motion.div
+          className="contact-content"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
+        >
+          <h2>Contato</h2>
+          <p>Me mande um e-mail: brunooliver2015@outlook.com</p>
           <div className="social-links">
-            <a href="https://github.com" target="_blank">
+            <a href="https://github.com/Dev-BrunoOliveira" target="_blank">
               GitHub
             </a>
-            <a href="https://linkedin.com" target="_blank">
+            <a
+              href="https://www.linkedin.com/in/bruno-oliveira011/"
+              target="_blank"
+            >
               LinkedIn
             </a>
           </div>
-        </div>
+        </motion.div>
       </section>
 
       <footer className="curriculo">
-        <h3>Hero / Footer</h3>
         <p>© {new Date().getFullYear()} Bruno Oliveira</p>
       </footer>
     </>
