@@ -53,83 +53,143 @@ body {
 }
 
 /* 4. GALERIA DE PROJETOS */
+/* 4. GALERIA DE PROJETOS (Estilo Google / Material Design) */
 .projects-gallery {
   position: relative;
   z-index: 1;
-}
-
-.projects-container {
-  display: flex;
-  flex-direction: column; /* cada card embaixo do outro */
-  gap: 8rem; /* espaço entre cards */
-  padding: 6rem 2rem;
   background-color: #111;
+  padding: 6rem 2rem; /* Espaçamento mais equilibrado */
 }
 
+/* Título da Seção (Opcional, mas recomendado) */
+.projects-gallery h2 {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  font-size: clamp(2rem, 5vw, 3rem);
+  margin-bottom: 4rem;
+  color: #eee;
+}
+
+/* MUDANÇA: Convertido para Grid para um layout moderno e responsivo */
+.projects-container {
+  display: grid;
+  /* Cria colunas que têm no mínimo 340px, preenchendo o espaço disponível */
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 2.5rem; /* Espaço consistente entre os cards */
+  max-width: 1200px; /* Limita a largura para melhor leitura */
+  margin: 0 auto; /* Centraliza o container */
+}
+
+/* MUDANÇA: .project-slide agora é o nosso Card */
 .project-slide {
-  min-height: 100vh; /* cada card ocupa pelo menos uma tela */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.slide-content {
-  display: flex;
-  align-items: center;
-  gap: 3rem;
-  width: 100%;
-  max-width: 1200px;
-  padding: 0 2rem;
-}
-
-.project-details {
-  flex: 1;
-  max-width: 400px;
-}
-.project-details h2 {
-  font-size: clamp(2rem, 4vw, 3.5rem);
-  line-height: 1.1;
-  margin-bottom: 1.5rem;
-}
-.project-details .project-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  margin-bottom: 2rem;
-}
-.project-details .project-tags .tag {
-  background-color: #222;
-  border: 1px solid #333;
-  padding: 0.3rem 0.8rem;
-  border-radius: 99px;
-  font-size: 0.8rem;
-}
-.btn-project {
-  background-color: #00bfff;
-  color: #111;
-  padding: 0.8rem 1.5rem;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: 700;
-  display: inline-block;
-  transition: transform 0.3s ease;
-}
-.btn-project:hover {
-  transform: scale(1.05);
-}
-.project-image {
-  flex: 1.5;
-  height: 60vh;
-  border-radius: 0.75rem;
+  background-color: #1c1c1c; /* Um cinza escuro sutil, menos chapado que o #111 */
+  border: 1px solid #2a2a2a;
+  border-radius: 16px; /* Bordas mais arredondadas, estilo Google */
   overflow: hidden;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+.project-slide:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);
+}
+
+.project-image {
+  width: 100%;
+  height: 220px; /* Altura fixa para consistência visual na grade */
+  flex-shrink: 0;
+  /* Removemos o 'flex' e outras propriedades desnecessárias para o card */
+}
+
 .project-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
+.project-details {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1; /* Faz esta área crescer para preencher o card */
+}
+
+.project-details h2 {
+  font-size: 1.5rem; /* Tamanho ajustado para o card */
+  margin-bottom: 0.75rem;
+  color: #f5f5f5;
+}
+
+.project-details p { /* Estilo para a descrição do projeto */
+  color: #b0b0b0;
+  line-height: 1.6;
+  font-size: 0.95rem;
+  margin-bottom: 1.25rem;
+  flex-grow: 1; /* Empurra tags e botões para o final do card */
+}
+
+.project-details .project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.project-details .project-tags .tag {
+  background-color: #333;
+  border: 1px solid #444;
+  color: #e0e0e0;
+  padding: 0.3rem 0.8rem;
+  border-radius: 99px;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+/* MUDANÇA: Container para os botões para controlar o espaçamento */
+.project-links {
+  display: flex;
+  gap: 0.75rem; /* Espaçamento leve entre os botões */
+  margin-top: auto; /* Garante que fiquem alinhados na base do card */
+}
+
+/* MUDANÇA: Renomeado de .btn-project para .btn e adicionado estilo secundário */
+/* Botão primário (preenchido) */
+.btn.btn-primary {
+  flex: 1; /* Ocupa o espaço disponível */
+  background-color: #8ab4f8; /* Azul Google */
+  color: #202124;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  text-align: center;
+  border: 1px solid transparent;
+  transition: background-color 0.3s ease;
+}
+
+.btn.btn-primary:hover {
+  background-color: #9ac1fa;
+}
+
+/* Botão secundário (contornado) */
+.btn.btn-secondary {
+  flex: 1;
+  background-color: transparent;
+  color: #8ab4f8;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  text-align: center;
+  border: 1px solid #5f6368;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn.btn-secondary:hover {
+  background-color: rgba(138, 180, 248, 0.1); /* Efeito de highlight sutil */
+}
 /* 5. SEÇÕES ABOUT E CONTACT */
 .about-section,
 .contact-section {
@@ -164,12 +224,11 @@ body {
 }
 .about-photo {
   flex: 1;
-  border-radius: 1rem;
   overflow: hidden;
 }
 .about-photo img {
-  width: 100%;
-  height: 100%;
+  width: 50%;
+  height: 50%;
   object-fit: cover;
 }
 .techs-grid {

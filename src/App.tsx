@@ -1,25 +1,72 @@
 // src/App.tsx
 import "./App.css";
-import { motion } from "framer-motion"; // <--- adicione isso
+import { motion } from "framer-motion";
+import React from "react"; // Importar React é uma boa prática
 
-// Array de projetos
-const projects = [
+// 1. Definir a interface para o objeto de projeto
+interface Project {
+  title: string;
+  description: string;
+  tags: string[];
+  deployLink: string;
+  repoLink: string; // Adicionado link para o repositório
+  image: string;
+}
+
+// 2. Criar o array de projetos com a tipagem e dados do seu HTML
+const projects: Project[] = [
   {
-    title: "Projeto 1",
-    tags: ["React", "TypeScript"],
-    deployLink: "https://exemplo.com/projeto1",
-    image: "/IMG/projeto1.jpg",
+    title: "Site Tesla",
+    description: "Site inspirado na Tesla, focado em design responsivo e moderno.",
+    tags: ["HTML", "CSS", "JavaScript"],
+    deployLink: "https://tesla-sigma-peach.vercel.app",
+    repoLink: "https://github.com/Dev-BrunoOliveira/TESLA",
+    image: "/IMG/TESLA.png",
   },
   {
-    title: "Projeto 2",
-    tags: ["JavaScript", "CSS"],
-    deployLink: "https://exemplo.com/projeto2",
-    image: "/IMG/projeto2.jpg",
+    title: "Pizzaria Donatello",
+    description: "Interface responsiva para uma pizzaria, utilizando Frontend.",
+    tags: ["React", "Vite", "JavaScript", "CSS"],
+    deployLink: "https://pizzaria-six-gray.vercel.app/",
+    repoLink: "https://github.com/Dev-BrunoOliveira/PIZZARIA",
+    image: "/IMG/PIZZARIA.png",
   },
-  // Adicione mais projetos conforme necessário
+  {
+    title: "Guia de Restaurantes",
+    description: "Um breve guia de restaurantes que visitei em São Paulo.",
+    tags: ["HTML", "CSS", "JavaScript"],
+    deployLink: "https://restaurantes-two.vercel.app/",
+    repoLink: "https://github.com/Dev-BrunoOliveira/RESTAURANTES",
+    image: "/IMG/GUIA.png",
+  },
+  {
+    title: "Dinaflix",
+    description: "Uma página inspirada na Netflix.",
+    tags: ["HTML", "CSS", "JavaScript"],
+    deployLink: "https://dinaflix.vercel.app/",
+    repoLink: "https://github.com/Dev-BrunoOliveira/NETFLIX",
+    image: "/IMG/NETFLIX.png",
+  },
+  {
+    title: "Fila de Editores",
+    description: "Sistema de fila para organizar a ordem de editores, com Frontend e Backend.",
+    tags: ["Firebase", "Vite", "JavaScript"],
+    deployLink: "https://filamaxsystem.vercel.app/",
+    repoLink: "https://github.com/Dev-BrunoOliveira/FILAMAXSYSTEM",
+    image: "/IMG/FILA.png",
+  },
+  {
+    title: "Concurso TJ",
+    description: "Um quiz para se preparar e estudar para o concurso de escrevente do TJ SP.",
+    tags: ["HTML", "CSS", "JavaScript"],
+    deployLink: "https://concurso-nine.vercel.app/",
+    repoLink: "https://github.com/Dev-BrunoOliveira/CONCURSO",
+    image: "/IMG/Concurso.png",
+  },
+  
 ];
 
-function App() {
+function App(): React.ReactElement { // 3. Tipagem do retorno da função
   return (
     <>
       {/* Hero */}
@@ -38,34 +85,43 @@ function App() {
         <div className="projects-container">
           {projects.map((project, idx) => (
             <motion.div
-              className="project-slide"
+              className="project-slide" 
               key={idx}
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.3 }}
               transition={{ duration: 0.6, delay: idx * 0.1 }}
             >
-              <div className="slide-content">
-                <div className="project-details">
-                  <h2>{project.title}</h2>
-                  <div className="project-tags">
-                    {project.tags.map((tag) => (
-                      <span className="tag" key={tag}>
-                        {tag}
-                      </span>
-                    ))}
-                  </div>
+              <div className="project-image">
+                 <img src={project.image} alt={project.title} />
+              </div>
+              <div className="project-details">
+                <h2>{project.title}</h2>
+                <p>{project.description}</p>
+                <div className="project-tags">
+                  {project.tags.map((tag) => (
+                    <span className="tag" key={tag}>
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+                <div className="project-links">
                   <a
                     href={project.deployLink}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="btn-project"
+                    className="btn"
                   >
-                    Ver Projeto
+                    Acessar
                   </a>
-                </div>
-                <div className="project-image">
-                  <img src={project.image} alt={project.title} />
+                  <a
+                    href={project.repoLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn"
+                  >
+                    Repositório
+                  </a>
                 </div>
               </div>
             </motion.div>
@@ -93,7 +149,15 @@ function App() {
             transition={{ duration: 0.8 }}
           >
             <h2>Sobre</h2>
-            <p>… seu texto …</p>
+            <p>Tenho 30 anos e moro em São Paulo, Brasil.
+            Estudo Análise e Desenvolvimento de Sistemas na Faculdade FAM com
+            previsão de conclusão em Agosto de 2027 e sempre fui apaixonado por
+            tecnologia. Com o tempo, percebi que queria transformar esse
+            interesse em carreira. Iniciei minha jornada profissional no design
+            e edição de imagens em uma agência, onde desenvolvi um olhar
+            analítico e harmônico. Antes disso, trabalhei como tatuador,
+            aprimorando minha percepção de composição, cores e detalhes. Hoje,
+            aplico essa precisão na criação de peças visuais impactantes.</p>
           </motion.div>
         </div>
       </section>
@@ -110,12 +174,13 @@ function App() {
           <h2>Contato</h2>
           <p>Me mande um e-mail: brunooliver2015@outlook.com</p>
           <div className="social-links">
-            <a href="https://github.com/Dev-BrunoOliveira" target="_blank">
+            <a href="https://github.com/Dev-BrunoOliveira" target="_blank" rel="noopener noreferrer">
               GitHub
             </a>
             <a
               href="https://www.linkedin.com/in/bruno-oliveira011/"
               target="_blank"
+              rel="noopener noreferrer"
             >
               LinkedIn
             </a>
