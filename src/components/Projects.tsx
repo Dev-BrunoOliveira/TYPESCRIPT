@@ -4,7 +4,6 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 gsap.registerPlugin(ScrollTrigger);
 
-// Array ATUALIZADO com todos os 13 projetos
 const projectData = [
   {
     title: "Site Tesla",

@@ -1,10 +1,6 @@
-/* src/App.css (Versão ajustada) */
-
-/* 1. FONTES */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap");
 
-/* 2. RESET */
 * {
   margin: 0;
   padding: 0;
@@ -21,7 +17,6 @@ body {
   min-height: 100vh;
 }
 
-/* 3. HERO */
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -52,16 +47,13 @@ body {
   animation: fadeInUp 1s ease-out 0.5s forwards;
 }
 
-/* 4. GALERIA DE PROJETOS */
-/* 4. GALERIA DE PROJETOS (Estilo Google / Material Design) */
 .projects-gallery {
   position: relative;
   z-index: 1;
   background-color: #111;
-  padding: 6rem 2rem; /* Espaçamento mais equilibrado */
+  padding: 6rem 2rem;
 }
 
-/* Título da Seção (Opcional, mas recomendado) */
 .projects-gallery h2 {
   font-family: "Montserrat", sans-serif;
   text-align: center;
@@ -70,21 +62,18 @@ body {
   color: #eee;
 }
 
-/* MUDANÇA: Convertido para Grid para um layout moderno e responsivo */
 .projects-container {
   display: grid;
-  /* Cria colunas que têm no mínimo 340px, preenchendo o espaço disponível */
   grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
-  gap: 2.5rem; /* Espaço consistente entre os cards */
-  max-width: 1200px; /* Limita a largura para melhor leitura */
-  margin: 0 auto; /* Centraliza o container */
+  gap: 2.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-/* MUDANÇA: .project-slide agora é o nosso Card */
 .project-slide {
-  background-color: #1c1c1c; /* Um cinza escuro sutil, menos chapado que o #111 */
+  background-color: #1c1c1c;
   border: 1px solid #2a2a2a;
-  border-radius: 16px; /* Bordas mais arredondadas, estilo Google */
+  border-radius: 16px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -98,9 +87,8 @@ body {
 
 .project-image {
   width: 100%;
-  height: 220px; /* Altura fixa para consistência visual na grade */
+  height: 220px;
   flex-shrink: 0;
-  /* Removemos o 'flex' e outras propriedades desnecessárias para o card */
 }
 
 .project-image img {
@@ -113,21 +101,21 @@ body {
   padding: 1.5rem;
   display: flex;
   flex-direction: column;
-  flex-grow: 1; /* Faz esta área crescer para preencher o card */
+  flex-grow: 1;
 }
 
 .project-details h2 {
-  font-size: 1.5rem; /* Tamanho ajustado para o card */
+  font-size: 1.5rem;
   margin-bottom: 0.75rem;
   color: #f5f5f5;
 }
 
-.project-details p { /* Estilo para a descrição do projeto */
+.project-details p {
   color: #b0b0b0;
   line-height: 1.6;
   font-size: 0.95rem;
   margin-bottom: 1.25rem;
-  flex-grow: 1; /* Empurra tags e botões para o final do card */
+  flex-grow: 1;
 }
 
 .project-details .project-tags {
@@ -147,18 +135,15 @@ body {
   font-weight: 500;
 }
 
-/* MUDANÇA: Container para os botões para controlar o espaçamento */
 .project-links {
   display: flex;
-  gap: 0.75rem; /* Espaçamento leve entre os botões */
-  margin-top: auto; /* Garante que fiquem alinhados na base do card */
+  gap: 0.75rem;
+  margin-top: auto;
 }
 
-/* MUDANÇA: Renomeado de .btn-project para .btn e adicionado estilo secundário */
-/* Botão primário (preenchido) */
 .btn.btn-primary {
-  flex: 1; /* Ocupa o espaço disponível */
-  background-color: #8ab4f8; /* Azul Google */
+  flex: 1;
+  background-color: #8ab4f8;
   color: #202124;
   padding: 0.75rem 1rem;
   border-radius: 8px;
@@ -173,7 +158,6 @@ body {
   background-color: #9ac1fa;
 }
 
-/* Botão secundário (contornado) */
 .btn.btn-secondary {
   flex: 1;
   background-color: transparent;
@@ -188,9 +172,9 @@ body {
 }
 
 .btn.btn-secondary:hover {
-  background-color: rgba(138, 180, 248, 0.1); /* Efeito de highlight sutil */
+  background-color: rgba(138, 180, 248, 0.1);
 }
-/* 5. SEÇÕES ABOUT E CONTACT */
+
 .about-section,
 .contact-section {
   position: relative;
@@ -210,6 +194,10 @@ body {
   gap: 3rem;
   max-width: 1000px;
 }
+.about-text {
+  flex: 1; 
+}
+
 .about-text h2,
 .contact-content h2,
 .curriculo h3 {
@@ -222,15 +210,19 @@ body {
   color: #aaa;
   line-height: 1.7;
 }
+
 .about-photo {
   flex: 1;
-  overflow: hidden;
+  max-width: 400px; 
 }
+
 .about-photo img {
-  width: 50%;
-  height: 50%;
+  width: 100%;
+  height: auto; 
   object-fit: cover;
+  border-radius: 16px; 
 }
+
 .techs-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
@@ -238,6 +230,7 @@ body {
   width: 100%;
   max-width: 800px;
 }
+
 .card-techs {
   background-color: #1a1a1a;
   border: 1px solid #2a2a2a;
@@ -250,13 +243,16 @@ body {
   gap: 0.75rem;
   transition: transform 0.3s ease;
 }
+
 .card-techs:hover {
   transform: translateY(-5px);
 }
+
 .card-techs img {
   height: 35px;
   width: 35px;
 }
+
 .card-techs span {
   font-weight: 500;
   font-size: 0.8rem;
@@ -266,12 +262,14 @@ body {
 .curriculo {
   text-align: center;
 }
+
 .social-links {
   display: flex;
   justify-content: center;
   gap: 1.5rem;
   margin-top: 2rem;
 }
+
 .social-links a {
   color: #ccc;
   text-decoration: none;
@@ -281,6 +279,7 @@ body {
   transition: color 0.3s ease;
   font-size: 1rem;
 }
+
 .social-links a:hover {
   color: #00bfff;
 }
@@ -300,25 +299,22 @@ body {
   transform: scale(1.05);
 }
 
-/* 6. RESPONSIVO */
 @media (max-width: 768px) {
-  .slide-content,
+
+  .projects-gallery,
+  .about-section,
+  .contact-section {
+    padding: 4rem 1.5rem; 
+  }
+  
   .about-content {
     flex-direction: column;
     text-align: center;
+    gap: 2rem; 
   }
-  .project-details {
-    max-width: 100%;
-  }
-  .project-details h2 {
-    font-size: 10vw;
-  }
-  .project-details .project-tags,
+
   .social-links {
     justify-content: center;
   }
-  .project-image {
-    width: 90vw;
-    height: 50vh;
-  }
+
 }
