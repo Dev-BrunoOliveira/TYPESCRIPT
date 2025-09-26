@@ -16,7 +16,7 @@ const Hero: React.FC = () => {
 
   return (
     <section className="hero">
-      <h1 ref={titleRef}>Front Bruno Oli</h1>
+      <h1 ref={titleRef}>Front Bruno Oliveira</h1>
     </section>
   );
 };

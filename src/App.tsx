@@ -1,19 +1,16 @@
-// src/App.tsx
 import "./App.css";
 import { motion } from "framer-motion";
-import React from "react"; // Importar React é uma boa prática
+import React from "react";
 
-// 1. Definir a interface para o objeto de projeto
 interface Project {
   title: string;
   description: string;
   tags: string[];
   deployLink: string;
-  repoLink: string; // Adicionado link para o repositório
+  repoLink: string; 
   image: string;
 }
 
-// 2. Criar o array de projetos com a tipagem e dados do seu HTML
 const projects: Project[] = [
   {
     title: "Site Tesla",
@@ -66,7 +63,7 @@ const projects: Project[] = [
   
 ];
 
-function App(): React.ReactElement { // 3. Tipagem do retorno da função
+function App(): React.ReactElement { 
   return (
     <>
       {/* Hero */}

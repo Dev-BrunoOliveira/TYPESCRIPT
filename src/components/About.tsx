@@ -43,15 +43,15 @@ export const About = () => {
           <h2>Sobre Mim</h2>
           <p>Olá, sou Bruno Oliveira...</p>
           <p>
-            Tenho 30 anos e moro em São Paulo, Brasil.
-            Estudo Análise e Desenvolvimento de Sistemas na Faculdade FAM com
-            previsão de conclusão em Agosto de 2027 e sempre fui apaixonado por
-            tecnologia. Com o tempo, percebi que queria transformar esse
-            interesse em carreira. Iniciei minha jornada profissional no design
-            e edição de imagens em uma agência, onde desenvolvi um olhar
-            analítico e harmônico. Antes disso, trabalhei como tatuador,
-            aprimorando minha percepção de composição, cores e detalhes. Hoje,
-            aplico essa precisão na criação de peças visuais impactantes.
+            Tenho 30 anos e moro em São Paulo, Brasil. Estudo Análise e
+            Desenvolvimento de Sistemas na Faculdade FAM com previsão de
+            conclusão em Agosto de 2027 e sempre fui apaixonado por tecnologia.
+            Com o tempo, percebi que queria transformar esse interesse em
+            carreira. Iniciei minha jornada profissional no design e edição de
+            imagens em uma agência, onde desenvolvi um olhar analítico e
+            harmônico. Antes disso, trabalhei como tatuador, aprimorando minha
+            percepção de composição, cores e detalhes. Hoje, aplico essa
+            precisão na criação de peças visuais impactantes.
           </p>
         </div>
         <div className="about-photo">
