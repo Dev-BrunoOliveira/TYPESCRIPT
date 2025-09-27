@@ -55,7 +55,7 @@ export const About = () => {
           </p>
         </div>
         <div className="about-photo">
-          <img src="/IMG/20br.jpg" alt="Foto de Bruno Oliveira" />
+          <img src="/IMG/30br.JPG" alt="Foto de Bruno Oliveira" />
         </div>
       </div>
       <div className="techs-grid">

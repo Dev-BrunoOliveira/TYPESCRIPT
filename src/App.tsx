@@ -63,6 +63,18 @@ const projects: Project[] = [
   
 ];
 
+const techs = [
+  { name: "HTML", imgSrc: "/IMG/techs/html.png" },
+  { name: "CSS", imgSrc: "/IMG/techs/css-3.png" },
+  { name: "JavaScript", imgSrc: "/IMG/techs/java-script.png" },
+  { name: "TypeScript", imgSrc: "/IMG/techs/typescript.png" },
+  { name: "React", imgSrc: "/IMG/techs/react.png" },
+  { name: "Vite", imgSrc: "/IMG/techs/vite.png" },
+  { name: "Firebase", imgSrc: "/IMG/techs/firebase.png" },
+  { name: "Python", imgSrc: "/IMG/techs/python.png" },
+  
+];
+
 function App(): React.ReactElement { 
   return (
     <>
@@ -122,6 +134,7 @@ function App(): React.ReactElement {
                 </div>
               </div>
             </motion.div>
+            
           ))}
         </div>
       </section>
@@ -136,7 +149,7 @@ function App(): React.ReactElement {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            <img src="/IMG/20br.jpg" alt="Bruno Oliveira" />
+            <img src="/IMG/30br.JPG" alt="Bruno Oliveira" />
           </motion.div>
           <motion.div
             className="about-text"
@@ -159,6 +172,26 @@ function App(): React.ReactElement {
         </div>
       </section>
 
+{/* techs*/}
+      <section className="techs-section">
+        <h2 className="techs-title">Tecnologias</h2>
+        <div className="techs-grid">
+          {techs.map((tech, idx) => (
+            <motion.div
+              className="card-techs"
+              key={tech.name}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.2 }}
+              transition={{ duration: 0.5, delay: idx * 0.1 }}
+            >
+              <img src={tech.imgSrc} alt={`Logo do ${tech.name}`} />
+              <span>{tech.name}</span>
+            </motion.div>
+          ))}
+        </div>
+      </section>
+
       {/* Contact */}
       <section className="contact-section">
         <motion.div
@@ -171,17 +204,25 @@ function App(): React.ReactElement {
           <h2>Contato</h2>
           <p>Me mande um e-mail: brunooliver2015@outlook.com</p>
           <div className="social-links">
-            <a href="https://github.com/Dev-BrunoOliveira" target="_blank" rel="noopener noreferrer">
-              GitHub
-            </a>
-            <a
-              href="https://www.linkedin.com/in/bruno-oliveira011/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              LinkedIn
-            </a>
-          </div>
+  <a 
+    href="https://github.com/Dev-BrunoOliveira" 
+    target="_blank" 
+    rel="noopener noreferrer"
+    className="social-btn github" // Adicione as classes aqui
+  >
+    <i className="fa-brands fa-github"></i> {/* Ícone do GitHub */}
+    GitHub
+  </a>
+  <a
+    href="https://www.linkedin.com/in/bruno-oliveira011/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="social-btn linkedin" // Adicione as classes aqui
+  >
+    <i className="fa-brands fa-linkedin"></i> {/* Ícone do LinkedIn */}
+    LinkedIn
+  </a>
+</div>
         </motion.div>
       </section>
 
