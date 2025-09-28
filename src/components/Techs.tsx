@@ -15,7 +15,7 @@ const techs: Tech[] = [
 function Techs() {
   return (
     <section className="techs-section">
-      <h2 className="techs-title">Tecnologias</h2>
+      <h2 className="techs-title">Minhas Principais Stacks</h2>
       <div className="techs-grid">
         {techs.map((tech, idx) => (
           <motion.div
