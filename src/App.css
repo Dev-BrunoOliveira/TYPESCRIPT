@@ -6,18 +6,18 @@ html {
 }
 
 section {
-  scroll-margin-top: 80px; 
+  scroll-margin-top: 80px;
 }
 
 .navbar {
-  background-color: rgba(0, 0, 0, 0.85); 
-  backdrop-filter: blur(10px); 
+  background-color: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(10px);
   padding: 1rem 2rem;
-  position: fixed; 
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 1000; 
+  z-index: 1000;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -29,11 +29,11 @@ section {
   display: flex;
   margin: 0;
   padding: 0;
-  gap: 2rem; 
+  gap: 2rem;
 }
 
 .nav-list li a {
-  color: #ffffff; 
+  color: #ffffff;
   text-decoration: none;
   font-size: 1rem;
   font-weight: 500;
@@ -43,11 +43,11 @@ section {
 }
 
 .nav-list li a:hover {
-  color: #64ffda; 
+  color: #64ffda;
 }
 
 .nav-list li a::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   height: 2px;
@@ -65,10 +65,10 @@ section {
 }
 
 .section-title {
-    text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
-    color: #ccd6f6;
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #ccd6f6;
 }
 
 * {
@@ -79,7 +79,7 @@ section {
 
 body {
   font-family: "Poppins", sans-serif;
-  background-color: #111;
+  background-color: #000000;
   color: #eee;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -103,9 +103,24 @@ body {
   display: grid;
   place-items: center;
   padding: 1rem;
-  background-color: #111;
-  z-index: 3;
-  position: relative;
+  position: relative; 
+  z-index: 1;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: 
+  linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+  url('/IMG/triunfo-de-venus.jpg');
+  background-size: cover;
+  background-position: center;
+  z-index: -1; 
 }
 
 .hero h1 {
@@ -113,8 +128,17 @@ body {
   font-size: clamp(2.5rem, 8vw, 8rem);
   font-weight: 700;
   text-align: center;
-  opacity: 0;
-  animation: fadeInUp 1s ease-out 0.5s forwards;
+  z-index: 2; 
+}
+
+.hero h1.hero-title-staggered {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.hero-title-staggered span {
+  display: inline-block; 
+  min-width: 0.5rem;
 }
 
 .projects-gallery {
@@ -212,56 +236,55 @@ body {
 }
 
 .project-links .btn {
-  color: #ffffff;                 
-  background-color: transparent;  
-  border: 1px solid #ffffff;       
-  padding: 0.5rem 1rem;           
-  border-radius: 8px;              
-  text-decoration: none;           
-  font-weight: 600;                
-  text-align: center;              
-  flex: 1;                         
-  transition: all 0.3s ease;       
+  color: #ffffff;
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  text-align: center;
+  flex: 1;
+  transition: all 0.3s ease;
 }
 
 .project-links .btn:hover {
-  background-color: #ffffff;      
-  color: #1c1c1c;                 
+  background-color: #ffffff;
+  color: #1c1c1c;
 }
 
 .load-more-container {
   text-align: center;
-  margin: 4rem 0 6rem 0; 
+  margin: 4rem 0 6rem 0;
 }
 
 .btn-load-more {
   color: #ffffff;
-  background-color: transparent; 
-  border: 2px solid #ffffff; 
+  background-color: transparent;
+  border: 2px solid #ffffff;
 
-  padding: 0.8rem 2.5rem; 
+  padding: 0.8rem 2.5rem;
   font-size: 1rem;
   font-weight: 600;
-  letter-spacing: 0.5px; 
-  
-  border-radius: 8px; 
+  letter-spacing: 0.5px;
+
+  border-radius: 8px;
   cursor: pointer;
   transition: all 0.3s ease-out;
 }
 
 .btn-load-more:hover {
-  background-color: #ffffff; 
-  color: #111; 
-  
+  background-color: #ffffff;
+  color: #111;
+
   transform: translateY(-3px);
-  box-shadow: 0 4px 15px rgba(100, 255, 218, 0.2); 
+  box-shadow: 0 4px 15px rgba(100, 255, 218, 0.2);
 }
 
-.about-section,
-.contact-section {
+.about-section {
   position: relative;
-  z-index: 2;
-  background-color: #111;
+  z-index: 1;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -270,7 +293,24 @@ body {
   width: 100%;
 }
 
+.about-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(17, 17, 17, 0.85)),
+    url("/IMG/renascentista.jpg");
+  background-size: cover;
+  background-position: center;
+
+  z-index: -1;
+}
+
 .about-content {
+  z-index: 2;
+
   display: flex;
   align-items: center;
   gap: 3rem;
@@ -302,12 +342,38 @@ body {
   width: 100%;
   height: auto;
   object-fit: cover;
-  border-radius: 16px;
+  border-radius: 200px;
+}
+
+.btn-cv {
+  display: inline-block;
+  margin-top: 2rem;
+
+  color: #ffffff;
+  background-color: transparent;
+  border: 2px solid #ffffff;
+
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  text-align: center;
+
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+
+.btn-cv:hover {
+  background-color: #ffffff;
+  color: #000000;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 15px rgba(100, 255, 218, 0.2);
 }
 
 .techs-section {
   padding: 4rem 2rem;
-  background: #0b0b0b; 
+  background: #0b0b0b;
   text-align: center;
 }
 
@@ -348,11 +414,11 @@ body {
 }
 
 .social-links {
-  display: flex;         
-  flex-wrap: wrap;       
-  justify-content: center; 
-  gap: 1.5rem;           
-  margin-top: 2rem;  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
 }
 
 .social-links a {
@@ -404,15 +470,14 @@ body {
 }
 
 .social-btn.whatsapp {
-  background-color: #25D366;
+  background-color: #25d366;
   color: #fff;
 }
 
-
 .social-btn.whatsapp:hover {
   background-color: transparent;
-  border-color: #25D366;
-  color: #25D366;
+  border-color: #25d366;
+  color: #25d366;
   transform: translateY(-3px);
 }
 @media (max-width: 768px) {

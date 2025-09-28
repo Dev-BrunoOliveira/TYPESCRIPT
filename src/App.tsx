@@ -1,8 +1,7 @@
 import './App.css';
 import React, { useState } from 'react';
-import type { Project } from './types'; // Importando do arquivo de tipos
+import type { Project } from './types'; 
 
-// Importando todos os nossos componentes
 import Header from './components/Header';
 import Hero from './components/Hero';
 import Projects from './components/Projects';
@@ -11,9 +10,8 @@ import Techs from './components/Techs';
 import Contact from './components/Contact';
 import Footer from './components/Footer'; 
 
-// A lista completa de projetos fica aqui, no componente principal
 const allProjects: Project[] = [
-  // ... COLE SEU ARRAY COMPLETO DE PROJETOS AQUI ...
+  
   {
     title: "Site Tesla",
     description: "Site inspirado na Tesla, focado em design responsivo e moderno.",
@@ -135,10 +133,8 @@ function App(): React.ReactElement {
       <Header />
       <main>
         <Hero />
-        {/* Passamos apenas os projetos que devem ser mostrados */}
         <Projects projects={projectsToShow} />
         
-        {/* Adicionamos o botão "Carregar Mais" aqui, no App */}
         {visibleProjects < allProjects.length && (
           <div className="load-more-container">
             <button onClick={handleLoadMore} className="btn-load-more">

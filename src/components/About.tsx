@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion';
+import { motion } from "framer-motion";
 
 function About() {
   return (
@@ -24,14 +24,21 @@ function About() {
           <p>
             Tenho 30 anos e moro em São Paulo, Brasil. Estudo Análise e
             Desenvolvimento de Sistemas na Faculdade FAM com previsão de
-            conclusão em Agosto de 2027 e sempre fui apaixonado por
-            tecnologia. Com o tempo, percebi que queria transformar esse
-            interesse em carreira. Iniciei minha jornada profissional no
-            design e edição de imagens em uma agência, onde desenvolvi um
-            olhar analítico e harmônico. Antes disso, trabalhei como tatuador,
-            aprimorando minha percepção de composição, cores e detalhes. Hoje,
-            aplico essa precisão na criação de peças visuais impactantes.
+            conclusão em Agosto de 2027 e sempre fui apaixonado por tecnologia.
+            Com o tempo, percebi que queria transformar esse interesse em
+            carreira. Iniciei minha jornada profissional no design e edição de
+            imagens em uma agência, onde desenvolvi um olhar analítico e
+            harmônico. Antes disso, trabalhei como tatuador, aprimorando minha
+            percepção de composição, cores e detalhes. Hoje, aplico essa
+            precisão na criação de peças visuais impactantes.
           </p>
+          <a
+            href="public/doc/BrunoDev[Front End].pdf"
+            download="BrunoDev[Front End].pdf"
+            className="btn-cv"
+          >
+            Baixar Curriculo
+          </a>
         </motion.div>
       </div>
     </section>
