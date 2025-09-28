@@ -1,27 +1,28 @@
-import "./App.css";
-import { motion } from "framer-motion";
-import React from "react";
+import './App.css';
+import React, { useState } from 'react';
+import type { Project } from './types'; // Importando do arquivo de tipos
 
-interface Project {
-  title: string;
-  description: string;
-  tags: string[];
-  deployLink: string;
-  repoLink: string;
-  image: string;
-}
+// Importando todos os nossos componentes
+import Header from './components/Header';
+import Hero from './components/Hero';
+import Projects from './components/Projects';
+import About from './components/About';
+import Techs from './components/Techs';
+import Contact from './components/Contact';
+import Footer from './components/Footer'; 
 
-const projects: Project[] = [
+// A lista completa de projetos fica aqui, no componente principal
+const allProjects: Project[] = [
+  // ... COLE SEU ARRAY COMPLETO DE PROJETOS AQUI ...
   {
     title: "Site Tesla",
-    description:
-      "Site inspirado na Tesla, focado em design responsivo e moderno.",
+    description: "Site inspirado na Tesla, focado em design responsivo e moderno.",
     tags: ["HTML", "CSS", "JavaScript"],
     deployLink: "https://tesla-sigma-peach.vercel.app",
     repoLink: "https://github.com/Dev-BrunoOliveira/TESLA",
     image: "/IMG/TESLA.png",
   },
-  {
+{
     title: "Pizzaria Donatello",
     description: "Interface responsiva para uma pizzaria, utilizando Frontend.",
     tags: ["React", "Vite", "JavaScript", "CSS"],
@@ -118,200 +119,39 @@ const projects: Project[] = [
   },
 ];
 
-const techs = [
-  { name: "HTML", imgSrc: "/IMG/techs/html.png" },
-  { name: "CSS", imgSrc: "/IMG/techs/css-3.png" },
-  { name: "JavaScript", imgSrc: "/IMG/techs/java-script.png" },
-  { name: "TypeScript", imgSrc: "/IMG/techs/typescript.png" },
-  { name: "React", imgSrc: "/IMG/techs/react.png" },
-  { name: "Vite", imgSrc: "/IMG/techs/vite.png" },
-  { name: "Firebase", imgSrc: "/IMG/techs/firebase.png" },
-  { name: "Python", imgSrc: "/IMG/techs/python.png" },
-];
+const INITIAL_PROJECTS_VISIBLE = 6;
 
 function App(): React.ReactElement {
+  const [visibleProjects, setVisibleProjects] = useState(INITIAL_PROJECTS_VISIBLE);
+
+  const handleLoadMore = () => {
+    setVisibleProjects(prevVisible => prevVisible + 6);
+  };
+
+  const projectsToShow = allProjects.slice(0, visibleProjects);
+
   return (
     <>
-      {}
-      <header className="navbar">
-        <nav>
-          <ul className="nav-list">
-            <li>
-              <a href="#inicio">Início</a>
-            </li>
-            <li>
-              <a href="#projetos">Projetos</a>
-            </li>
-            <li>
-              <a href="#sobre">Sobre</a>
-            </li>
-            <li>
-              <a href="#contato">Contato</a>
-            </li>
-          </ul>
-        </nav>
-      </header>
-
-      {/* Hero*/}
-      <section id="inicio" className="hero">
-        <motion.h1
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-        >
-          Front-end Bruno Oliveira
-        </motion.h1>
-      </section>
-
-      {}
-      <section id="projetos" className="projects-gallery">
-        <h2 className="section-title">Projetos</h2> {}
-        <div className="projects-container">
-          {projects.map((project, idx) => (
-            <motion.div
-              className="project-slide"
-              key={idx}
-              initial={{ opacity: 0, y: 50 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.3 }}
-              transition={{ duration: 0.6, delay: idx * 0.1 }}
-            >
-              <div className="project-image">
-                <img src={project.image} alt={project.title} />
-              </div>
-              <div className="project-details">
-                <h2>{project.title}</h2>
-                <p>{project.description}</p>
-                <div className="project-tags">
-                  {project.tags.map((tag) => (
-                    <span className="tag" key={tag}>
-                      {tag}
-                    </span>
-                  ))}
-                </div>
-                <div className="project-links">
-                  <a
-                    href={project.deployLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="btn"
-                  >
-                    Acessar
-                  </a>
-                  <a
-                    href={project.repoLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="btn"
-                  >
-                    Repositório
-                  </a>
-                </div>
-              </div>
-            </motion.div>
-          ))}
-        </div>
-      </section>
-
-      {/* About*/}
-      <section id="sobre" className="about-section">
-        <div className="about-content">
-          <motion.div
-            className="about-photo"
-            initial={{ opacity: 0, x: -50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-          >
-            <img src="/IMG/20br.jpg" alt="Bruno Oliveira" />
-          </motion.div>
-          <motion.div
-            className="about-text"
-            initial={{ opacity: 0, x: 50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-          >
-            <h2>Sobre</h2>
-            <p>
-              Tenho 30 anos e moro em São Paulo, Brasil. Estudo Análise e
-              Desenvolvimento de Sistemas na Faculdade FAM com previsão de
-              conclusão em Agosto de 2027 e sempre fui apaixonado por
-              tecnologia. Com o tempo, percebi que queria transformar esse
-              interesse em carreira. Iniciei minha jornada profissional no
-              design e edição de imagens em uma agência, onde desenvolvi um
-              olhar analítico e harmônico. Antes disso, trabalhei como tatuador,
-              aprimorando minha percepção de composição, cores e detalhes. Hoje,
-              aplico essa precisão na criação de peças visuais impactantes.
-            </p>
-          </motion.div>
-        </div>
-      </section>
-
-      {/* techs*/}
-      <section className="techs-section">
-        <h2 className="techs-title">Tecnologias</h2>
-        <div className="techs-grid">
-          {techs.map((tech, idx) => (
-            <motion.div
-              className="card-techs"
-              key={tech.name}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.2 }}
-              transition={{ duration: 0.5, delay: idx * 0.1 }}
-            >
-              <img src={tech.imgSrc} alt={`Logo do ${tech.name}`} />
-              <span>{tech.name}</span>
-            </motion.div>
-          ))}
-        </div>
-      </section>
-
-      {/*Contato*/}
-      <section id="contato" className="contact-section">
-        <motion.div
-          className="contact-content"
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8 }}
-        >
-          <h2>Contato</h2>
-          <p>Me mande um e-mail: brunooliver2015@outlook.com</p>
-          <div className="social-links">
-            <a
-              href="https://wa.me/message/XDBZLY2ZNU27H1"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="social-btn whatsapp"
-            >
-              <i className="fa-brands fa-whatsapp"></i> WhatsApp
-            </a>
-            <a
-              href="https://github.com/Dev-BrunoOliveira"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="social-btn github"
-            >
-              <i className="fa-brands fa-github"></i>
-              GitHub
-            </a>
-            <a
-              href="https://www.linkedin.com/in/bruno-oliveira011/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="social-btn linkedin"
-            >
-              <i className="fa-brands fa-linkedin"></i> LinkedIn
-            </a>
+      <Header />
+      <main>
+        <Hero />
+        {/* Passamos apenas os projetos que devem ser mostrados */}
+        <Projects projects={projectsToShow} />
+        
+        {/* Adicionamos o botão "Carregar Mais" aqui, no App */}
+        {visibleProjects < allProjects.length && (
+          <div className="load-more-container">
+            <button onClick={handleLoadMore} className="btn-load-more">
+              Ver mais projetos
+            </button>
           </div>
-        </motion.div>
-      </section>
+        )}
 
-      <footer className="curriculo">
-        <p>© {new Date().getFullYear()} Bruno Oliveira</p>
-      </footer>
+        <About />
+        <Techs />
+        <Contact />
+      </main>
+      <Footer />
     </>
   );
 }

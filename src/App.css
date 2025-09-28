@@ -229,6 +229,34 @@ body {
   color: #1c1c1c;                 
 }
 
+.load-more-container {
+  text-align: center;
+  margin: 4rem 0 6rem 0; 
+}
+
+.btn-load-more {
+  color: #ffffff;
+  background-color: transparent; 
+  border: 2px solid #ffffff; 
+
+  padding: 0.8rem 2.5rem; 
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.5px; 
+  
+  border-radius: 8px; 
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+
+.btn-load-more:hover {
+  background-color: #ffffff; 
+  color: #111; 
+  
+  transform: translateY(-3px);
+  box-shadow: 0 4px 15px rgba(100, 255, 218, 0.2); 
+}
+
 .about-section,
 .contact-section {
   position: relative;

@@ -1,24 +1,17 @@
-import React, { useEffect, useRef } from "react";
-import { gsap } from "gsap";
+import { motion } from 'framer-motion';
 
-const Hero: React.FC = () => {
-  const titleRef = useRef<HTMLHeadingElement>(null);
-
-  useEffect(() => {
-    if (titleRef.current) {
-      gsap.fromTo(
-        titleRef.current,
-        { opacity: 0, y: 50 },
-        { opacity: 1, y: 0, duration: 1.5, ease: "power3.out" }
-      );
-    }
-  }, []);
-
+function Hero() {
   return (
-    <section className="hero">
-      <h1 ref={titleRef}>Front Bruno Oliveira</h1>
+    <section id="inicio" className="hero">
+      <motion.h1
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+      >
+        Front-end Bruno Oliveira
+      </motion.h1>
     </section>
   );
-};
+}
 
 export default Hero;
