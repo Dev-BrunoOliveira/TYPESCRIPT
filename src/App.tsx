@@ -7,14 +7,15 @@ interface Project {
   description: string;
   tags: string[];
   deployLink: string;
-  repoLink: string; 
+  repoLink: string;
   image: string;
 }
 
 const projects: Project[] = [
   {
     title: "Site Tesla",
-    description: "Site inspirado na Tesla, focado em design responsivo e moderno.",
+    description:
+      "Site inspirado na Tesla, focado em design responsivo e moderno.",
     tags: ["HTML", "CSS", "JavaScript"],
     deployLink: "https://tesla-sigma-peach.vercel.app",
     repoLink: "https://github.com/Dev-BrunoOliveira/TESLA",
@@ -46,7 +47,8 @@ const projects: Project[] = [
   },
   {
     title: "Fila de Editores",
-    description: "Sistema de fila para organizar a ordem de editores, com Frontend e Backend.",
+    description:
+      "Sistema de fila para organizar a ordem de editores, com Frontend e Backend.",
     tags: ["Firebase", "Vite", "JavaScript"],
     deployLink: "https://filamaxsystem.vercel.app/",
     repoLink: "https://github.com/Dev-BrunoOliveira/FILAMAXSYSTEM",
@@ -54,13 +56,13 @@ const projects: Project[] = [
   },
   {
     title: "Concurso TJ",
-    description: "Um quiz para se preparar e estudar para o concurso de escrevente do TJ SP.",
+    description:
+      "Um quiz para se preparar e estudar para o concurso de escrevente do TJ SP.",
     tags: ["HTML", "CSS", "JavaScript"],
     deployLink: "https://concurso-nine.vercel.app/",
     repoLink: "https://github.com/Dev-BrunoOliveira/CONCURSO",
     image: "/IMG/Concurso.png",
   },
-  
 ];
 
 const techs = [
@@ -72,14 +74,33 @@ const techs = [
   { name: "Vite", imgSrc: "/IMG/techs/vite.png" },
   { name: "Firebase", imgSrc: "/IMG/techs/firebase.png" },
   { name: "Python", imgSrc: "/IMG/techs/python.png" },
-  
 ];
 
-function App(): React.ReactElement { 
+function App(): React.ReactElement {
   return (
     <>
-      {/* Hero */}
-      <section className="hero">
+      {}
+      <header className="navbar">
+        <nav>
+          <ul className="nav-list">
+            <li>
+              <a href="#inicio">Início</a>
+            </li>
+            <li>
+              <a href="#projetos">Projetos</a>
+            </li>
+            <li>
+              <a href="#sobre">Sobre</a>
+            </li>
+            <li>
+              <a href="#contato">Contato</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      {/* Hero*/}
+      <section id="inicio" className="hero">
         <motion.h1
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -89,12 +110,13 @@ function App(): React.ReactElement {
         </motion.h1>
       </section>
 
-      {/* Projetos */}
-      <section className="projects-gallery">
+      {}
+      <section id="projetos" className="projects-gallery">
+        <h2 className="section-title">Projetos</h2> {}
         <div className="projects-container">
           {projects.map((project, idx) => (
             <motion.div
-              className="project-slide" 
+              className="project-slide"
               key={idx}
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -102,7 +124,7 @@ function App(): React.ReactElement {
               transition={{ duration: 0.6, delay: idx * 0.1 }}
             >
               <div className="project-image">
-                 <img src={project.image} alt={project.title} />
+                <img src={project.image} alt={project.title} />
               </div>
               <div className="project-details">
                 <h2>{project.title}</h2>
@@ -134,13 +156,12 @@ function App(): React.ReactElement {
                 </div>
               </div>
             </motion.div>
-            
           ))}
         </div>
       </section>
 
-      {/* About */}
-      <section className="about-section">
+      {/* About*/}
+      <section id="sobre" className="about-section">
         <div className="about-content">
           <motion.div
             className="about-photo"
@@ -149,7 +170,7 @@ function App(): React.ReactElement {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            <img src="/IMG/30br.JPG" alt="Bruno Oliveira" />
+            <img src="/IMG/20br.jpg" alt="Bruno Oliveira" />
           </motion.div>
           <motion.div
             className="about-text"
@@ -159,20 +180,22 @@ function App(): React.ReactElement {
             transition={{ duration: 0.8 }}
           >
             <h2>Sobre</h2>
-            <p>Tenho 30 anos e moro em São Paulo, Brasil.
-            Estudo Análise e Desenvolvimento de Sistemas na Faculdade FAM com
-            previsão de conclusão em Agosto de 2027 e sempre fui apaixonado por
-            tecnologia. Com o tempo, percebi que queria transformar esse
-            interesse em carreira. Iniciei minha jornada profissional no design
-            e edição de imagens em uma agência, onde desenvolvi um olhar
-            analítico e harmônico. Antes disso, trabalhei como tatuador,
-            aprimorando minha percepção de composição, cores e detalhes. Hoje,
-            aplico essa precisão na criação de peças visuais impactantes.</p>
+            <p>
+              Tenho 30 anos e moro em São Paulo, Brasil. Estudo Análise e
+              Desenvolvimento de Sistemas na Faculdade FAM com previsão de
+              conclusão em Agosto de 2027 e sempre fui apaixonado por
+              tecnologia. Com o tempo, percebi que queria transformar esse
+              interesse em carreira. Iniciei minha jornada profissional no
+              design e edição de imagens em uma agência, onde desenvolvi um
+              olhar analítico e harmônico. Antes disso, trabalhei como tatuador,
+              aprimorando minha percepção de composição, cores e detalhes. Hoje,
+              aplico essa precisão na criação de peças visuais impactantes.
+            </p>
           </motion.div>
         </div>
       </section>
 
-{/* techs*/}
+      {/* techs*/}
       <section className="techs-section">
         <h2 className="techs-title">Tecnologias</h2>
         <div className="techs-grid">
@@ -192,8 +215,8 @@ function App(): React.ReactElement {
         </div>
       </section>
 
-      {/* Contact */}
-      <section className="contact-section">
+      {/*Contato*/}
+      <section id="contato" className="contact-section">
         <motion.div
           className="contact-content"
           initial={{ opacity: 0, y: 30 }}
@@ -204,25 +227,32 @@ function App(): React.ReactElement {
           <h2>Contato</h2>
           <p>Me mande um e-mail: brunooliver2015@outlook.com</p>
           <div className="social-links">
-  <a 
-    href="https://github.com/Dev-BrunoOliveira" 
-    target="_blank" 
-    rel="noopener noreferrer"
-    className="social-btn github" // Adicione as classes aqui
-  >
-    <i className="fa-brands fa-github"></i> {/* Ícone do GitHub */}
-    GitHub
-  </a>
-  <a
-    href="https://www.linkedin.com/in/bruno-oliveira011/"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="social-btn linkedin" // Adicione as classes aqui
-  >
-    <i className="fa-brands fa-linkedin"></i> {/* Ícone do LinkedIn */}
-    LinkedIn
-  </a>
-</div>
+            <a
+              href="https://wa.me/message/XDBZLY2ZNU27H1"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="social-btn whatsapp"
+            >
+              <i className="fa-brands fa-whatsapp"></i> WhatsApp
+            </a>
+            <a
+              href="https://github.com/Dev-BrunoOliveira"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="social-btn github"
+            >
+              <i className="fa-brands fa-github"></i>
+              GitHub
+            </a>
+            <a
+              href="https://www.linkedin.com/in/bruno-oliveira011/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="social-btn linkedin"
+            >
+              <i className="fa-brands fa-linkedin"></i> LinkedIn
+            </a>
+          </div>
         </motion.div>
       </section>
 

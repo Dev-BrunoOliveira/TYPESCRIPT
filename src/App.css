@@ -1,6 +1,76 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap");
 
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  scroll-margin-top: 80px; 
+}
+
+.navbar {
+  background-color: rgba(0, 0, 0, 0.85); 
+  backdrop-filter: blur(10px); 
+  padding: 1rem 2rem;
+  position: fixed; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  gap: 2rem; 
+}
+
+.nav-list li a {
+  color: #ffffff; 
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.5rem 0;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-list li a:hover {
+  color: #64ffda; 
+}
+
+.nav-list li a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #64ffda;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-out;
+}
+
+.nav-list li a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #ccd6f6;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -128,7 +198,7 @@ body {
 .project-details .project-tags .tag {
   background-color: #333;
   border: 1px solid #444;
-  color: #e0e0e0;
+  color: #ffffff;
   padding: 0.3rem 0.8rem;
   border-radius: 99px;
   font-size: 0.75rem;
@@ -141,38 +211,22 @@ body {
   margin-top: auto;
 }
 
-.btn.btn-primary {
-  flex: 1;
-  background-color: #8ab4f8;
-  color: #202124;
-  padding: 0.75rem 1rem;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: 600;
-  text-align: center;
-  border: 1px solid transparent;
-  transition: background-color 0.3s ease;
+.project-links .btn {
+  color: #ffffff;                 
+  background-color: transparent;  
+  border: 1px solid #ffffff;       
+  padding: 0.5rem 1rem;           
+  border-radius: 8px;              
+  text-decoration: none;           
+  font-weight: 600;                
+  text-align: center;              
+  flex: 1;                         
+  transition: all 0.3s ease;       
 }
 
-.btn.btn-primary:hover {
-  background-color: #9ac1fa;
-}
-
-.btn.btn-secondary {
-  flex: 1;
-  background-color: transparent;
-  color: #8ab4f8;
-  padding: 0.75rem 1rem;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: 600;
-  text-align: center;
-  border: 1px solid #5f6368;
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.btn.btn-secondary:hover {
-  background-color: rgba(138, 180, 248, 0.1);
+.project-links .btn:hover {
+  background-color: #ffffff;      
+  color: #1c1c1c;                 
 }
 
 .about-section,
@@ -225,7 +279,7 @@ body {
 
 .techs-section {
   padding: 4rem 2rem;
-  background: #0b0b0b; /* ou transparente */
+  background: #0b0b0b; 
   text-align: center;
 }
 
@@ -263,6 +317,14 @@ body {
 .contact-content,
 .curriculo {
   text-align: center;
+}
+
+.social-links {
+  display: flex;         
+  flex-wrap: wrap;       
+  justify-content: center; 
+  gap: 1.5rem;           
+  margin-top: 2rem;  
 }
 
 .social-links a {
@@ -310,6 +372,19 @@ body {
   background-color: transparent;
   border-color: #0a66c2;
   color: #0a66c2;
+  transform: translateY(-3px);
+}
+
+.social-btn.whatsapp {
+  background-color: #25D366;
+  color: #fff;
+}
+
+
+.social-btn.whatsapp:hover {
+  background-color: transparent;
+  border-color: #25D366;
+  color: #25D366;
   transform: translateY(-3px);
 }
 @media (max-width: 768px) {
