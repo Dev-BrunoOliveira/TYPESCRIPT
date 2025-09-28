@@ -33,7 +33,7 @@ function About() {
             precisão na criação de peças visuais impactantes.
           </p>
           <a
-            href="public/doc/BrunoDev[Front End].pdf"
+            href="/doc/BrunoDev[Front End].pdf"
             download="BrunoDev[Front End].pdf"
             className="btn-cv"
           >
