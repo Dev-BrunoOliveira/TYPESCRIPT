@@ -8,7 +8,7 @@ function Hero() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
       >
-        Front-end Bruno Oliveira
+        Full Stack Bruno Oliveira
       </motion.h1>
     </section>
   );
