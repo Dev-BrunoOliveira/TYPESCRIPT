@@ -120,8 +120,6 @@ body {
   background-size: cover;
   background-position: center;
   z-index: -1;
-
-  background-attachment: fixed;
 }
 
 .hero h1 {
