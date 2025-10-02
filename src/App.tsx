@@ -21,20 +21,21 @@ const allProjects: Project[] = [
     image: "/IMG/TESLA.png",
   },
   {
-    title: "Pizzaria Donatello",
-    description: "Este projeto é uma landing page vibrante e funcional para uma pizzaria fictícia chamada Donatello, focada em criar uma experiência de usuário convidativa e direta. Ele serve como um ótimo exemplo de uma interface comercial, demonstrando como apresentar produtos, serviços e informações de contato de forma eficaz em uma única página.",
-    tags: ["React", "Vite", "JavaScript", "CSS"],
-    deployLink: "https://pizzaria-six-gray.vercel.app/",
-    repoLink: "https://github.com/Dev-BrunoOliveira/PIZZARIA",
-    image: "/IMG/PIZZARIA.png",
-  },
-  {
     title: "Guia de Restaurantes",
     description: "Este projeto é um guia de restaurantes pessoal e curado, nascido da paixão do desenvolvedor por gastronomia e por explorar novos lugares em São Paulo. O site funciona como um blog visual, onde eu compartilho minhas experiências e recomendações, oferecendo um roteiro confiável para quem busca novas opções culinárias na cidade.",
     tags: ["HTML", "CSS", "JavaScript"],
     deployLink: "https://restaurantes-two.vercel.app/",
     repoLink: "https://github.com/Dev-BrunoOliveira/RESTAURANTES",
     image: "/IMG/GUIA.png",
+  },
+{
+    title: "Concurso TJ",
+    description:
+      "Com o objetivo de democratizar o acesso a materiais de estudo para concursos, identifiquei que a maioria das plataformas preparatórias para Escrevente do TJ-SP exigia um investimento financeiro. Em resposta a essa lacuna, desenvolvi um quiz interativo e totalmente gratuito, projetado para auxiliar os candidatos a testarem e aprofundarem seus conhecimentos de forma eficaz para o exame.",
+    tags: ["HTML", "CSS", "JavaScript"],
+    deployLink: "https://concurso-nine.vercel.app/",
+    repoLink: "https://github.com/Dev-BrunoOliveira/CONCURSO",
+    image: "/IMG/Concurso.png",
   },
   {
     title: "Dinaflix",
@@ -43,6 +44,14 @@ const allProjects: Project[] = [
     deployLink: "https://dinaflix.vercel.app/",
     repoLink: "https://github.com/Dev-BrunoOliveira/NETFLIX",
     image: "/IMG/NETFLIX.png",
+  },
+    {
+    title: "Pizzaria Donatello",
+    description: "Este projeto é uma landing page vibrante e funcional para uma pizzaria fictícia chamada Donatello, focada em criar uma experiência de usuário convidativa e direta. Ele serve como um ótimo exemplo de uma interface comercial, demonstrando como apresentar produtos, serviços e informações de contato de forma eficaz em uma única página.",
+    tags: ["React", "Vite", "JavaScript", "CSS"],
+    deployLink: "https://pizzaria-six-gray.vercel.app/",
+    repoLink: "https://github.com/Dev-BrunoOliveira/PIZZARIA",
+    image: "/IMG/PIZZARIA.png",
   },
   {
     title: "Fila de Editores",
@@ -53,15 +62,7 @@ const allProjects: Project[] = [
     repoLink: "https://github.com/Dev-BrunoOliveira/FILAMAXSYSTEM",
     image: "/IMG/FILA.png",
   },
-  {
-    title: "Concurso TJ",
-    description:
-      "Com o objetivo de democratizar o acesso a materiais de estudo para concursos, identifiquei que a maioria das plataformas preparatórias para Escrevente do TJ-SP exigia um investimento financeiro. Em resposta a essa lacuna, desenvolvi um quiz interativo e totalmente gratuito, projetado para auxiliar os candidatos a testarem e aprofundarem seus conhecimentos de forma eficaz para o exame.",
-    tags: ["HTML", "CSS", "JavaScript"],
-    deployLink: "https://concurso-nine.vercel.app/",
-    repoLink: "https://github.com/Dev-BrunoOliveira/CONCURSO",
-    image: "/IMG/Concurso.png",
-  },
+  
   {
     title: "Comunidade de Receitas",
     description:
