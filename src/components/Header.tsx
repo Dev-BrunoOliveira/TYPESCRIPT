@@ -25,22 +25,22 @@ function Header() {
         <nav className={`nav-links ${isMenuOpen ? "active" : ""}`}>
           <ul className="nav-list">
             <li>
-              <a href="#inicio" onClick={toggleMenu}>
+              <a href="#inicio" onClick={() => isMenuOpen && toggleMenu()}>
                 Início
               </a>
             </li>
             <li>
-              <a href="#projetos" onClick={toggleMenu}>
+              <a href="#projetos" onClick={() => isMenuOpen && toggleMenu()}>
                 Projetos
               </a>
             </li>
             <li>
-              <a href="#sobre" onClick={toggleMenu}>
+              <a href="#sobre" onClick={() => isMenuOpen && toggleMenu()}>
                 Sobre
               </a>
             </li>
             <li>
-              <a href="#contato" onClick={toggleMenu}>
+              <a href="#contato" onClick={() => isMenuOpen && toggleMenu()}>
                 Contato
               </a>
             </li>
