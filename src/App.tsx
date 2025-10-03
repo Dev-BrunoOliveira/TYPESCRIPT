@@ -26,7 +26,7 @@ const allProjects: Project[] = [
     tags: ["HTML", "CSS", "JavaScript"],
     deployLink: "https://restaurantes-two.vercel.app/",
     repoLink: "https://github.com/Dev-BrunoOliveira/RESTAURANTES",
-    image: "/IMG/GUIA.png",
+    image: "/IMG/RESTAURANTES.jpg",
   },
 {
     title: "Concurso TJ",
