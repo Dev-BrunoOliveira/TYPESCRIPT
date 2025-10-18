@@ -22,15 +22,16 @@ function About() {
         >
           <h2>Sobre</h2>
           <p>
-            Tenho 30 anos e moro em São Paulo, Brasil. Estudo Análise e
-            Desenvolvimento de Sistemas na Faculdade FAM com previsão de
-            conclusão em Agosto de 2027 e sempre fui apaixonado por tecnologia.
-            Com o tempo, percebi que queria transformar esse interesse em
-            carreira. Iniciei minha jornada profissional no design e edição de
-            imagens em uma agência, onde desenvolvi um olhar analítico e
-            harmônico. Antes disso, trabalhei como tatuador, aprimorando minha
-            percepção de composição, cores e detalhes. Hoje, aplico essa
-            precisão na criação de peças visuais impactantes.
+            Tenho 30 anos e moro em São Paulo, Brasil. Sou estudante de Análise
+            e Desenvolvimento de Sistemas na Faculdade FAM, com previsão de
+            conclusão em agosto de 2027. Minha relação com a tecnologia sempre
+            foi de curiosidade e criação,algo que evoluiu naturalmente para
+            uma carreira. Comecei no design e na edição de imagens em uma
+            agência, onde aprendi a unir lógica e estética. Antes disso, atuei
+            por sete anos como tatuador, experiência que aprimorou meu senso de
+            composição, cores e atenção aos detalhes. Hoje, levo esse olhar
+            preciso e artístico para o desenvolvimento front-end e para a
+            criação de experiências visuais marcantes.
           </p>
           <a
             href="/doc/BrunoDev[Front End].pdf"
