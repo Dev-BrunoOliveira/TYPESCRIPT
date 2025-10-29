@@ -10,6 +10,7 @@ const techs: Tech[] = [
   { name: 'Vite', imgSrc: '/IMG/techs/vite.png' },
   { name: 'Firebase', imgSrc: '/IMG/techs/firebase.png' },
   { name: 'Python', imgSrc: '/IMG/techs/python.png' },
+  { name: 'MySQL', imgSrc: '/IMG/techs/mysql.png' },
 ];
 
 function Techs() {
