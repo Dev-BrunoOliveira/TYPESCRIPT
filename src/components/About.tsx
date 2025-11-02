@@ -28,7 +28,7 @@ function About() {
             foi de curiosidade e criação,algo que evoluiu naturalmente para
             uma carreira. Comecei no design e na edição de imagens em uma
             agência, onde aprendi a unir lógica e estética. Antes disso, atuei
-            por sete anos como tatuador, experiência que aprimorou meu senso de
+            por oito anos como tatuador, experiência que aprimorou meu senso de
             composição, cores e atenção aos detalhes. Hoje, levo esse olhar
             preciso e artístico para o desenvolvimento front-end e para a
             criação de experiências visuais marcantes.
