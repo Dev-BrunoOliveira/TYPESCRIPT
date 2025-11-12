@@ -76,9 +76,9 @@ const allProjects: Project[] = [
     title: "Loja de Camisetas",
     description:
       "Ainda estou estruturando essa loja online, conforme vou aprendendo ferramentas novas.",
-    tags: ["HTML", "CSS", "JavaScript"],
+    tags: ["React", "TypeScript"],
     deployLink: "https://laranjodina.vercel.app/",
-    repoLink: "https://github.com/Dev-BrunoOliveira/LARANJODINA",
+    repoLink: "https://github.com/Dev-BrunoOliveira/STORE",
     image: "/IMG/LARANJODINA.png",
   },
   {
