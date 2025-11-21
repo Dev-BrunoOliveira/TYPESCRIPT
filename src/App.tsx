@@ -22,13 +22,14 @@ const allProjects: Project[] = [
   },
   {
     title: "Guia de Restaurantes",
-    description: "Este projeto é um guia de restaurantes pessoal e curado, nascido da paixão do desenvolvedor por gastronomia e por explorar novos lugares em São Paulo. O site funciona como um blog visual, onde eu compartilho minhas experiências e recomendações, oferecendo um roteiro confiável para quem busca novas opções culinárias na cidade.",
+    description:
+      "Este projeto é um guia de restaurantes pessoal e curado, nascido da paixão do desenvolvedor por gastronomia e por explorar novos lugares em São Paulo. O site funciona como um blog visual, onde eu compartilho minhas experiências e recomendações, oferecendo um roteiro confiável para quem busca novas opções culinárias na cidade.",
     tags: ["HTML", "CSS", "JavaScript"],
     deployLink: "https://restaurantes-two.vercel.app/",
     repoLink: "https://github.com/Dev-BrunoOliveira/RESTAURANTES",
     image: "/IMG/RESTAURANTES.jpg",
   },
-{
+  {
     title: "Concurso TJ",
     description:
       "Com o objetivo de democratizar o acesso a materiais de estudo para concursos, identifiquei que a maioria das plataformas preparatórias para Escrevente do TJ-SP exigia um investimento financeiro. Em resposta a essa lacuna, desenvolvi um quiz interativo e totalmente gratuito, projetado para auxiliar os candidatos a testarem e aprofundarem seus conhecimentos de forma eficaz para o exame.",
@@ -39,19 +40,30 @@ const allProjects: Project[] = [
   },
   {
     title: "Dinaflix",
-    description: "Este projeto é uma recriação de front-end da interface de usuário da Netflix, batizada de Dinaflix devido direitos autorais. O objetivo é replicar com fidelidade o design imersivo, o layout característico e as micro-interações que tornam a experiência da plataforma de streaming tão reconhecível e intuitiva.",
+    description:
+      "Este projeto é uma recriação de front-end da interface de usuário da Netflix, batizada de Dinaflix devido direitos autorais. O objetivo é replicar com fidelidade o design imersivo, o layout característico e as micro-interações que tornam a experiência da plataforma de streaming tão reconhecível e intuitiva.",
     tags: ["HTML", "CSS", "JavaScript"],
     deployLink: "https://dinaflix.vercel.app/",
     repoLink: "https://github.com/Dev-BrunoOliveira/NETFLIX",
     image: "/IMG/NETFLIX.png",
   },
-    {
+  {
     title: "Pizzaria Donatello",
-    description: "Este projeto é uma landing page vibrante e funcional para uma pizzaria fictícia chamada Donatello, focada em criar uma experiência de usuário convidativa e direta. Ele serve como um ótimo exemplo de uma interface comercial, demonstrando como apresentar produtos, serviços e informações de contato de forma eficaz em uma única página.",
+    description:
+      "Este projeto é uma landing page vibrante e funcional para uma pizzaria fictícia chamada Donatello, focada em criar uma experiência de usuário convidativa e direta. Ele serve como um ótimo exemplo de uma interface comercial, demonstrando como apresentar produtos, serviços e informações de contato de forma eficaz em uma única página.",
     tags: ["React", "Vite", "JavaScript", "CSS"],
     deployLink: "https://pizzaria-six-gray.vercel.app/",
     repoLink: "https://github.com/Dev-BrunoOliveira/PIZZARIA",
     image: "/IMG/PIZZARIA.png",
+  },
+  {
+    title: "Loja de Camisetas",
+    description:
+      "Ainda estou estruturando essa loja online, conforme vou aprendendo ferramentas novas, vou inserindo elas no projeto.A ideia a principal é vender camisetas com estampas personalizadas.",
+    tags: ["React", "TypeScript"],
+    deployLink: "https://laranjodina.vercel.app/",
+    repoLink: "https://github.com/Dev-BrunoOliveira/STORE",
+    image: "/IMG/LARANJODINA.png",
   },
   {
     title: "Fila de Editores",
@@ -62,7 +74,6 @@ const allProjects: Project[] = [
     repoLink: "https://github.com/Dev-BrunoOliveira/FILAMAXSYSTEM",
     image: "/IMG/FILA.png",
   },
-  
   {
     title: "Comunidade de Receitas",
     description:
@@ -72,15 +83,7 @@ const allProjects: Project[] = [
     repoLink: "https://github.com/Dev-BrunoOliveira/MANDARECEITA",
     image: "/IMG/MANDARECEITAS.png",
   },
-  {
-    title: "Loja de Camisetas",
-    description:
-      "Ainda estou estruturando essa loja online, conforme vou aprendendo ferramentas novas.",
-    tags: ["React", "TypeScript"],
-    deployLink: "https://laranjodina.vercel.app/",
-    repoLink: "https://github.com/Dev-BrunoOliveira/STORE",
-    image: "/IMG/LARANJODINA.png",
-  },
+
   {
     title: "Hunter x Hunter",
     description: "Cards com Informações sobres os personagens de HxH.",
