@@ -59,8 +59,8 @@ const allProjects: Project[] = [
   {
     title: "Loja de Camisetas",
     description:
-      "Ainda estou estruturando essa loja online, conforme vou aprendendo ferramentas novas, vou inserindo elas no projeto.A ideia a principal é vender camisetas com estampas personalizadas.Demonstrando as minhas habilidades para trabalhar com ecomerce no futuro.A princiocio vou vender apenas camisetas, mais futuramente pretendo expandir para outros tipos de produtos.",
-    tags: ["React", "TypeScript"],
+      "Colocando em pratica o meu conhecimento de consumo de API e trabalhando banco de dados com MySQL para guardar as informações de login dos usuario, para manter a fluidez da compra.A ideia a principal é vender camisetas com estampas personalizadas.Demonstrando as minhas habilidades para trabalhar com ecomerce no futuro.",
+    tags: ["React", "TypeScript", "MySQL", "CSS"],
     deployLink: "https://laranjodina.vercel.app/",
     repoLink: "https://github.com/Dev-BrunoOliveira/STORE",
     image: "/IMG/LARANJODINA.png",
