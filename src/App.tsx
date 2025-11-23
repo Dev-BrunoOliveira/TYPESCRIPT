@@ -38,6 +38,15 @@ const allProjects: Project[] = [
     repoLink: "https://github.com/Dev-BrunoOliveira/CONCURSO",
     image: "/IMG/Concurso.png",
   },
+   {
+    title: "Loja de Camisetas",
+    description:
+      "Colocando em pratica o meu conhecimento de consumo de API e trabalhando banco de dados com MySQL para guardar as informações de login dos usuario, para manter a fluidez da compra.A ideia a principal é vender camisetas com estampas personalizadas.Demonstrando as minhas habilidades para trabalhar com ecomerce no futuro.",
+    tags: ["React", "TypeScript", "MySQL", "CSS"],
+    deployLink: "https://laranjodina.vercel.app/",
+    repoLink: "https://github.com/Dev-BrunoOliveira/STORE",
+    image: "/IMG/LARANJODINA.png",
+  },
   {
     title: "Dinaflix",
     description:
@@ -55,15 +64,6 @@ const allProjects: Project[] = [
     deployLink: "https://pizzaria-six-gray.vercel.app/",
     repoLink: "https://github.com/Dev-BrunoOliveira/PIZZARIA",
     image: "/IMG/PIZZARIA.png",
-  },
-  {
-    title: "Loja de Camisetas",
-    description:
-      "Colocando em pratica o meu conhecimento de consumo de API e trabalhando banco de dados com MySQL para guardar as informações de login dos usuario, para manter a fluidez da compra.A ideia a principal é vender camisetas com estampas personalizadas.Demonstrando as minhas habilidades para trabalhar com ecomerce no futuro.",
-    tags: ["React", "TypeScript", "MySQL", "CSS"],
-    deployLink: "https://laranjodina.vercel.app/",
-    repoLink: "https://github.com/Dev-BrunoOliveira/STORE",
-    image: "/IMG/LARANJODINA.png",
   },
   {
     title: "Fila de Editores",
