@@ -1,16 +1,18 @@
-import { motion } from 'framer-motion';
-import type { Tech } from '../types';
+import { motion } from "framer-motion";
+import type { Tech } from "../types";
 
 const techs: Tech[] = [
-  { name: 'HTML', imgSrc: '/IMG/techs/html.png' },
-  { name: 'CSS', imgSrc: '/IMG/techs/css-3.png' },
-  { name: 'JavaScript', imgSrc: '/IMG/techs/java-script.png' },
-  { name: 'TypeScript', imgSrc: '/IMG/techs/typescript.png' },
-  { name: 'React', imgSrc: '/IMG/techs/react.png' },
-  { name: 'Vite', imgSrc: '/IMG/techs/vite.png' },
-  { name: 'Firebase', imgSrc: '/IMG/techs/firebase.png' },
-  { name: 'Python', imgSrc: '/IMG/techs/python.png' },
-  { name: 'MySQL', imgSrc: '/IMG/techs/mysql.png' },
+  { name: "HTML", imgSrc: "/IMG/techs/html.png" },
+  { name: "CSS", imgSrc: "/IMG/techs/css-3.png" },
+  { name: "JavaScript", imgSrc: "/IMG/techs/java-script.png" },
+  { name: "React", imgSrc: "/IMG/techs/react.png" },
+  { name: "Github", imgSrc: "/IMG/techs/github.png" },
+  { name: "TypeScript", imgSrc: "/IMG/techs/typescript.png" },
+  { name: "Vite", imgSrc: "/IMG/techs/vite.png" },
+  { name: "Firebase", imgSrc: "/IMG/techs/firebase.png" },
+  { name: "Python", imgSrc: "/IMG/techs/python.png" },
+  { name: "MySQL", imgSrc: "/IMG/techs/mysql.png" },
+  { name: "Supabase", imgSrc: "/IMG/techs/supabase.jpg" },
 ];
 
 function Techs() {
