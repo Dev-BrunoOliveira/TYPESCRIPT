@@ -394,17 +394,34 @@ body {
   border-radius: 12px;
   text-align: center;
   backdrop-filter: blur(4px);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+}
+
+.card-techs:hover {
+  transform: translateY(-6px);
+  background: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6);
 }
 
 .card-techs img {
   max-width: 60px;
   margin-bottom: 0.5rem;
+  transition: transform 0.25s ease;
+}
+
+.card-techs:hover img {
+  transform: scale(1.15);
 }
 
 .card-techs span {
   display: block;
   font-size: 0.9rem;
   color: #fff;
+  transition: color 0.25s ease;
+}
+
+.card-techs:hover span {
+  color: #64ffda;
 }
 
 .contact-content,

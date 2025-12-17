@@ -34,8 +34,8 @@ function About() {
             criação de experiências visuais marcantes e funcionais na web.
           </p>
           <a
-            href="/doc/BrunoDev[FullStack].pdf"
-            download="BrunoDev[FullStack].pdf"
+            href="/doc/BrunoOliveiraDev[FullStack].pdf"
+            download="BrunoOliveiraDev[FullStack].pdf"
             className="btn-cv"
           >
             Baixar Curriculo
