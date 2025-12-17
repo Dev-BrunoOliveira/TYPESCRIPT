@@ -31,7 +31,7 @@ function About() {
             anos como tatuador, experiência que aprimorou meu senso de
             composição, cores e atenção aos detalhes. Hoje, levo esse olhar
             preciso e artístico para o desenvolvimento front-end e para a
-            criação de experiências visuais marcantes.
+            criação de experiências visuais marcantes e funcionais na web.
           </p>
           <a
             href="/doc/BrunoDev[FullStack].pdf"
