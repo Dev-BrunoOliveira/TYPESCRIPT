@@ -1,69 +1,31 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 1️⃣ **TYPESCRIPT (Novo Portfólio)**
+```md
+# Portfólio em React + TypeScript
 
-Currently, two official plugins are available:
+Novo portfólio pessoal desenvolvido com foco em performance, experiência do usuário e responsividade. O projeto apresenta meus trabalhos, tecnologias e um pouco da minha trajetória como desenvolvedor Full Stack.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Tecnologias
+- React
+- TypeScript
+- Vite
+- CSS
+- Framer Motion
 
-## Expanding the ESLint configuration
+## 📌 Funcionalidades
+- Layout responsivo
+- Animações suaves
+- Sessão de projetos
+- Download de currículo
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🧠 Aprendizados
+- Organização de componentes
+- Tipagem com TypeScript
+- Foco em UX/UI
+- Animações com Framer Motion
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## ▶️ Como executar
+```bash
+npm install
+npm run dev
+<img width="1820" height="912" alt="portfolio" src="https://github.com/user-attachments/assets/2513a4f8-f48f-4313-bacc-35a5e9081476" />
