@@ -3,7 +3,8 @@
 ```md
 # Portfólio em React + TypeScript
 
-Novo portfólio pessoal desenvolvido com foco em performance, experiência do usuário e responsividade. O projeto apresenta meus trabalhos, tecnologias e um pouco da minha trajetória como desenvolvedor Full Stack.
+Novo portfólio pessoal desenvolvido com foco em performance, experiência do usuário e responsividade.
+O projeto apresenta meus trabalhos, tecnologias e um pouco da minha trajetória como desenvolvedor Full Stack.
 
 ## 🚀 Tecnologias
 - React
@@ -28,4 +29,5 @@ Novo portfólio pessoal desenvolvido com foco em performance, experiência do us
 ```bash
 npm install
 npm run dev
-<img width="1820" height="912" alt="portfolio" src="https://github.com/user-attachments/assets/2513a4f8-f48f-4313-bacc-35a5e9081476" />
+
+
