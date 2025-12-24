@@ -38,7 +38,7 @@ const allProjects: Project[] = [
     repoLink: "https://github.com/Dev-BrunoOliveira/CONCURSO",
     image: "/IMG/Concurso.png",
   },
-   {
+  {
     title: "Loja de Camisetas",
     description:
       "Colocando em pratica o meu conhecimento de consumo de API e trabalhando banco de dados com MySQL para guardar as informações de login dos usuario, para manter a fluidez da compra.A ideia a principal é vender camisetas com estampas personalizadas.Demonstrando as minhas habilidades para trabalhar com ecomerce no futuro.",
@@ -86,7 +86,8 @@ const allProjects: Project[] = [
 
   {
     title: "Hunter x Hunter",
-    description: "Cards com Informações sobres os personagens de HxH.",
+    description:
+      "Cards com Informações sobres os personagens de HxH utilizando API com uma estética construida com CSS e funcionalidade em JavaScript.",
     tags: ["HTML", "CSS", "JavaScript"],
     deployLink: "https://hunter-nine.vercel.app/",
     repoLink: "https://github.com/Dev-BrunoOliveira/HUNTER",
@@ -113,7 +114,7 @@ const allProjects: Project[] = [
   {
     title: "Calculadora de Notas",
     description:
-      "Desenvolvi com a finalidade de calcular as notas das atividas da minha faculdade, facilitando entender se estou Aprovado ou Reprovado.",
+      "Desenvolvi com a finalidade de calcular as notas das atividas da minha faculdade, facilitando entender se estou Aprovado ou Reprovado.Compartilhei para ajudar outros estudantes que também precisam dessa funcionalidade.",
     tags: ["HTML", "CSS", "JavaScript"],
     deployLink: "https://calculadora-de-notas-jade.vercel.app/",
     repoLink: "https://github.com/Dev-BrunoOliveira/CALCULADORA-DE-NOTAS",
