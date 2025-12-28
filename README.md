@@ -1,69 +1,43 @@
-# React + TypeScript + Vite
+# Portfólio • React + TypeScript 🚀
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este é meu **novo portfólio pessoal**, desenvolvido com foco em **performance, experiência do usuário e responsividade**.  
+O projeto reúne meus principais trabalhos, tecnologias que utilizo no dia a dia e um pouco da minha trajetória como desenvolvedor.
 
-Currently, two official plugins are available:
+A ideia foi criar algo **limpo, fluido e moderno**, priorizando UX/UI e animações sutis.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🧰 Tecnologias Utilizadas
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+<p align="center">
+  <img src="https://img.shields.io/badge/-React-61DAFB?style=flat&logo=react&logoColor=black" />
+  <img src="https://img.shields.io/badge/-TypeScript-3178C6?style=flat&logo=typescript&logoColor=white" />
+  <img src="https://img.shields.io/badge/-Vite-646CFF?style=flat&logo=vite&logoColor=white" />
+  <img src="https://img.shields.io/badge/-CSS3-1572B6?style=flat&logo=css3&logoColor=white" />
+  <img src="https://img.shields.io/badge/-Framer%20Motion-0055FF?style=flat&logo=framer&logoColor=white" />
+</p>
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+## 📌 Funcionalidades
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- Layout totalmente responsivo
+- Animações suaves com Framer Motion
+- Seção de projetos
+- Sessão sobre mim
+- Download de currículo
+- Navegação fluida e intuitiva
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🧠 Aprendizados
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Durante o desenvolvimento deste projeto, aprofundei conhecimentos em:
+
+- Organização e reutilização de componentes
+- Tipagem e boas práticas com TypeScript
+- Animações focadas em UX/UI
+- Performance e responsividade
+- Estruturação de um portfólio profissional
+
+---
