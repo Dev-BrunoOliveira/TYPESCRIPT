@@ -31,7 +31,8 @@ function About() {
             anos como tatuador, experiência que aprimorou meu senso de
             composição, cores e atenção aos detalhes. Hoje, levo esse olhar
             preciso e artístico para o desenvolvimento front-end e para a
-            criação de experiências visuais marcantes e funcionais na web.
+            criação de experiências visuais marcantes e funcionais na web trabalhando,
+            também o backend para oferecer projetos mais completos.
           </p>
           <a
             href="/doc/BrunoOliveiraDev[FullStack].pdf"

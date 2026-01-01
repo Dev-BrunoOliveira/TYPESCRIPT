@@ -105,7 +105,7 @@ const allProjects: Project[] = [
   {
     title: "Agendamento Barbearia",
     description:
-      "A ideia é uma plataforma para barbearias assim podendo ter controle dos clientes agendados e automatização do atendimento indireto.",
+      "A ideia é uma plataforma para barbearias assim podendo ter controle dos clientes agendados e automatização do atendimento indireto, além disso é um ótimo modelo de apresentação.",
     tags: ["HTML", "CSS", "JavaScript"],
     deployLink: "https://barbearia-vert-delta.vercel.app/",
     repoLink: "https://github.com/Dev-BrunoOliveira/BARBEARIA",
