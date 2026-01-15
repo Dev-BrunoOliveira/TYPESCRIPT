@@ -22,17 +22,23 @@ function About() {
         >
           <h2>Sobre</h2>
           <p>
-            Tenho 30 anos e moro em São Paulo, Brasil. Sou estudante de Análise
-            e Desenvolvimento de Sistemas na Faculdade FAM, com previsão de
-            conclusão em agosto de 2027. Minha relação com a tecnologia sempre
-            foi de curiosidade e criação,algo que evoluiu naturalmente para uma
-            carreira. Comecei no design e na edição de imagens em uma agência,
-            onde aprendi a unir lógica e estética. Antes disso, atuei por oito
-            anos como tatuador, experiência que aprimorou meu senso de
-            composição, cores e atenção aos detalhes. Hoje, levo esse olhar
-            preciso e artístico para o desenvolvimento front-end e para a
-            criação de experiências visuais marcantes e funcionais na web trabalhando,
-            também o backend para oferecer projetos mais completos.
+            Tenho 30 anos e resido em São Paulo, Brasil. Sou estudante de
+            Análise e Desenvolvimento de Sistemas na Faculdade FAM, com previsão
+            de conclusão em agosto de 2027. Minha trajetória com tecnologia
+            sempre foi movida pela curiosidade e pela criação. Iniciei minha
+            carreira no design gráfico e edição de imagens, atuando em agência,
+            onde desenvolvi a capacidade de unir estética, usabilidade e lógica.
+            Antes disso, trabalhei por oito anos como tatuador, experiência que
+            refinou meu senso de composição visual, cores, precisão e atenção
+            aos detalhes. Atualmente, aplico esse olhar criativo no
+            desenvolvimento front-end, criando interfaces modernas, responsivas
+            e focadas em experiência do usuário, utilizando tecnologias como
+            React, TypeScript, Tailwind CSS e Vite. Paralelamente, venho
+            expandindo meus conhecimentos em back-end, com foco em integrações,
+            bancos de dados e lógica de negócio, buscando entregar soluções mais
+            completas e funcionais. Meu objetivo é atuar em projetos onde design
+            e tecnologia caminham juntos, transformando ideias em experiências
+            digitais eficientes, intuitivas e visualmente marcantes.
           </p>
           <a
             href="/doc/BrunoOliveiraDev[FullStack].pdf"
