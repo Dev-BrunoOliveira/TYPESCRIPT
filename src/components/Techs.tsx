@@ -14,6 +14,7 @@ const techs: Tech[] = [
   { name: "Firebase", imgSrc: "/IMG/techs/firebase.png" },
   { name: "PostgreSQL", imgSrc: "/IMG/techs/postgresql.png" },
   { name: "MySQL", imgSrc: "/IMG/techs/mysql.png" },
+  { name: "Google Cloud", imgSrc: "/IMG/techs/googleCloud.png" },
   
 ];
 
