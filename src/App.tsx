@@ -38,6 +38,15 @@ const allProjects: Project[] = [
     repoLink: "https://github.com/Dev-BrunoOliveira/CONCURSO",
     image: "/IMG/Concurso.png",
   },
+   {
+    title: "Controle Financeiro",
+    description:
+      "Um aplicativo de controle financeiro pessoal desenvolvido para ajudar os usuários a gerenciar suas finanças de maneira eficiente. Com funcionalidades que permitem o registro de receitas e despesas, trabalhei o consumo de API tendo a possibilidade de logar com a conta do Google.",
+    tags: ["React", "TypeScript", "CSS", "Supabase"],
+    deployLink: "https://carteira-self.vercel.app/",
+    repoLink: "https://github.com/Dev-BrunoOliveira/CARTEIRA",
+    image: "/IMG/CARTEIRA.png",
+  },
   {
     title: "Loja de Camisetas",
     description:
