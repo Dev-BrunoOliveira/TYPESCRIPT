@@ -38,7 +38,7 @@ const allProjects: Project[] = [
     repoLink: "https://github.com/Dev-BrunoOliveira/CONCURSO",
     image: "/IMG/Concurso.png",
   },
-   {
+  {
     title: "Controle Financeiro",
     description:
       "Um aplicativo de controle financeiro pessoal desenvolvido para ajudar os usuários a gerenciar suas finanças de maneira eficiente. Com funcionalidades que permitem o registro de receitas e despesas, trabalhei o consumo de API tendo a possibilidade de logar com a conta do Google.",
@@ -92,7 +92,15 @@ const allProjects: Project[] = [
     repoLink: "https://github.com/Dev-BrunoOliveira/MANDARECEITA",
     image: "/IMG/MANDARECEITAS.png",
   },
-
+  {
+    title: "Agendapro",
+    description:
+      "A ideia é uma plataforma para barbearias assim podendo ter controle dos clientes agendados e automatização do atendimento indireto, além disso é um ótimo modelo de apresentação.",
+    tags: ["HTML", "CSS", "JavaScript"],
+    deployLink: "https://barbearia-vert-delta.vercel.app/",
+    repoLink: "https://github.com/Dev-BrunoOliveira/BARBEARIA",
+    image: "/IMG/BARBEARIA.png",
+  },
   {
     title: "Hunter x Hunter",
     description:
@@ -112,15 +120,6 @@ const allProjects: Project[] = [
     image: "/IMG/SNAKE GAME.png",
   },
   {
-    title: "Agendamento Barbearia",
-    description:
-      "A ideia é uma plataforma para barbearias assim podendo ter controle dos clientes agendados e automatização do atendimento indireto, além disso é um ótimo modelo de apresentação.",
-    tags: ["HTML", "CSS", "JavaScript"],
-    deployLink: "https://barbearia-vert-delta.vercel.app/",
-    repoLink: "https://github.com/Dev-BrunoOliveira/BARBEARIA",
-    image: "/IMG/BARBEARIA.png",
-  },
-  {
     title: "Calculadora de Notas",
     description:
       "Desenvolvi com a finalidade de calcular as notas das atividas da minha faculdade, facilitando entender se estou Aprovado ou Reprovado.Compartilhei para ajudar outros estudantes que também precisam dessa funcionalidade.",
@@ -135,7 +134,7 @@ const INITIAL_PROJECTS_VISIBLE = 6;
 
 function App(): React.ReactElement {
   const [visibleProjects, setVisibleProjects] = useState(
-    INITIAL_PROJECTS_VISIBLE
+    INITIAL_PROJECTS_VISIBLE,
   );
 
   const handleLoadMore = () => {
