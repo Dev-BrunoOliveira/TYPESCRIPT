@@ -38,7 +38,7 @@ function About() {
             bancos de dados e lógica de negócio, buscando entregar soluções mais
             completas e funcionais. Meu objetivo é atuar em projetos onde design
             e tecnologia caminham juntos, transformando ideias em experiências
-            digitais eficientes, intuitivas e visualmente marcantes.
+            digitais eficientes, intuitivas.
           </p>
           <a
             href="/doc/BrunoOliveiraDev[FullStack].pdf"
