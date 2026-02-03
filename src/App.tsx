@@ -93,15 +93,6 @@ const allProjects: Project[] = [
     image: "/IMG/MANDARECEITAS.png",
   },
   {
-    title: "Agendapro",
-    description:
-      "A ideia é uma plataforma para barbearias assim podendo ter controle dos clientes agendados e automatização do atendimento indireto, além disso é um ótimo modelo de apresentação.",
-    tags: ["HTML", "CSS", "JavaScript"],
-    deployLink: "https://barbearia-vert-delta.vercel.app/",
-    repoLink: "https://github.com/Dev-BrunoOliveira/BARBEARIA",
-    image: "/IMG/BARBEARIA.png",
-  },
-  {
     title: "Hunter x Hunter",
     description:
       "Cards com Informações sobres os personagens de HxH utilizando API com uma estética construida com CSS e funcionalidade em JavaScript.",
