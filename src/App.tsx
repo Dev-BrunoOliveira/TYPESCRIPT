@@ -41,7 +41,7 @@ const allProjects: Project[] = [
   {
     title: "Controle Financeiro",
     description:
-      "Um aplicativo de controle financeiro pessoal desenvolvido para ajudar os usuários a gerenciar suas finanças de maneira eficiente. Com funcionalidades que permitem o registro de receitas e despesas, trabalhei o consumo de API tendo a possibilidade de logar com a conta do Google.",
+      "Um aplicativo de controle financeiro pessoal desenvolvido para ajudar os usuários a gerenciar suas finanças de maneira eficiente. Com funcionalidades que permitem o registro de ganhos e gastos, trabalhei o consumo de API tendo a possibilidade de logar com a conta do Google,passando maior credibilidade para o usuário, e utilizando o Supabase para armazenar os dados de forma segura e escalável. O design é moderno e responsivo, garantindo uma experiência de usuário fluida em dispositivos móveis e desktop.",
     tags: ["React", "TypeScript", "CSS", "Supabase"],
     deployLink: "https://carteira-self.vercel.app/",
     repoLink: "https://github.com/Dev-BrunoOliveira/CARTEIRA",
