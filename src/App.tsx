@@ -93,15 +93,6 @@ const allProjects: Project[] = [
     image: "/IMG/MANDARECEITAS.png",
   },
   {
-    title: "Hunter x Hunter",
-    description:
-      "Cards com Informações sobres os personagens de HxH utilizando API com uma estética construida com CSS e funcionalidade em JavaScript.",
-    tags: ["HTML", "CSS", "JavaScript"],
-    deployLink: "https://hunter-nine.vercel.app/",
-    repoLink: "https://github.com/Dev-BrunoOliveira/HUNTER",
-    image: "/IMG/hunter.png",
-  },
-  {
     title: "Jogo da Cobrinha",
     description:
       "Testando as minhas habilidades, focada no Javascript, desenvolvi um jogo da cobrinha um grande cla´ssico dos games,onde o jogador controla uma cobra que deve comer alimentos para crescer, evitando colidir com as paredes ou consigo mesma.",
