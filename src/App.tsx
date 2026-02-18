@@ -93,6 +93,15 @@ const allProjects: Project[] = [
     image: "/IMG/MANDARECEITAS.png",
   },
   {
+    title: "Seguradora de Vida",
+    description:
+      "Projeto de uma landing page para uma seguradora de vida, focada em transmitir confiança e profissionalismo. O design é limpo e moderno, com uma paleta de cores sóbria e elementos visuais que reforçam a segurança e a proteção oferecidas pela empresa. A página inclui seções para destacar os benefícios dos planos, depoimentos de clientes satisfeitos e um formulário de contato para facilitar a comunicação com potenciais clientes.",
+    tags: ["React", "CSS", "TypeScript"],
+    deployLink: "https://corretora-zeta.vercel.app/",
+    repoLink: "https://github.com/Dev-BrunoOliveira/CORRETORA",
+    image: "/IMG/SEGURADORA.png",
+  },
+  {
     title: "Jogo da Cobrinha",
     description:
       "Testando as minhas habilidades, focada no Javascript, desenvolvi um jogo da cobrinha um grande cla´ssico dos games,onde o jogador controla uma cobra que deve comer alimentos para crescer, evitando colidir com as paredes ou consigo mesma.",
