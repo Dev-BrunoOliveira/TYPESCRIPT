@@ -12,13 +12,31 @@ import Footer from "./components/Footer";
 
 const allProjects: Project[] = [
   {
-    title: "Site Tesla",
+    title: "Seguradora de Vida",
     description:
-      "Este projeto é uma recriação fiel e bem executada da icônica landing page da Tesla, servindo como um excelente estudo de caso de design moderno e desenvolvimento front-end. O foco principal é capturar a estética minimalista, a experiência de usuário imersiva e as animações suaves que caracterizam o site oficial da marca.",
-    tags: ["HTML", "CSS", "JavaScript"],
-    deployLink: "https://tesla-sigma-peach.vercel.app",
-    repoLink: "https://github.com/Dev-BrunoOliveira/TESLA",
-    image: "/IMG/TESLA.png",
+      "Projeto de uma landing page para uma seguradora de vida, focada em transmitir confiança e profissionalismo. O design é limpo e moderno, com uma paleta de cores sóbria e elementos visuais que reforçam a segurança e a proteção oferecidas pela empresa. A página inclui seções para destacar os benefícios dos planos, depoimentos de clientes satisfeitos e um formulário de contato para facilitar a comunicação com potenciais clientes.",
+    tags: ["React", "CSS", "TypeScript"],
+    deployLink: "https://corretora-zeta.vercel.app/",
+    repoLink: "https://github.com/Dev-BrunoOliveira/CORRETORA",
+    image: "/IMG/SEGURADORA.png",
+  },
+  {
+    title: "Controle Financeiro",
+    description:
+      "Um aplicativo de controle financeiro pessoal desenvolvido para ajudar os usuários a gerenciar suas finanças de maneira eficiente. Com funcionalidades que permitem o registro de ganhos e gastos, trabalhei o consumo de API tendo a possibilidade de logar com a conta do Google,passando maior credibilidade para o usuário, e utilizando o Supabase para armazenar os dados de forma segura e escalável. O design é moderno e responsivo, garantindo uma experiência de usuário fluida em dispositivos móveis e desktop.",
+    tags: ["React", "TypeScript", "CSS", "Supabase"],
+    deployLink: "https://carteira-self.vercel.app/",
+    repoLink: "https://github.com/Dev-BrunoOliveira/CARTEIRA",
+    image: "/IMG/CARTEIRA.png",
+  },
+  {
+    title: "Loja de Camisetas",
+    description:
+      "Colocando em pratica o meu conhecimento de consumo de API e trabalhando banco de dados com MySQL para guardar as informações de login dos usuario, para manter a fluidez da compra.A ideia a principal é vender camisetas com estampas personalizadas.Demonstrando as minhas habilidades para trabalhar com ecomerce no futuro.",
+    tags: ["React", "TypeScript", "MySQL", "CSS"],
+    deployLink: "https://laranjodina.vercel.app/",
+    repoLink: "https://github.com/Dev-BrunoOliveira/STORE",
+    image: "/IMG/LARANJODINA.png",
   },
   {
     title: "Guia de Restaurantes",
@@ -38,23 +56,15 @@ const allProjects: Project[] = [
     repoLink: "https://github.com/Dev-BrunoOliveira/CONCURSO",
     image: "/IMG/Concurso.png",
   },
+
   {
-    title: "Controle Financeiro",
+    title: "Site Tesla",
     description:
-      "Um aplicativo de controle financeiro pessoal desenvolvido para ajudar os usuários a gerenciar suas finanças de maneira eficiente. Com funcionalidades que permitem o registro de ganhos e gastos, trabalhei o consumo de API tendo a possibilidade de logar com a conta do Google,passando maior credibilidade para o usuário, e utilizando o Supabase para armazenar os dados de forma segura e escalável. O design é moderno e responsivo, garantindo uma experiência de usuário fluida em dispositivos móveis e desktop.",
-    tags: ["React", "TypeScript", "CSS", "Supabase"],
-    deployLink: "https://carteira-self.vercel.app/",
-    repoLink: "https://github.com/Dev-BrunoOliveira/CARTEIRA",
-    image: "/IMG/CARTEIRA.png",
-  },
-  {
-    title: "Loja de Camisetas",
-    description:
-      "Colocando em pratica o meu conhecimento de consumo de API e trabalhando banco de dados com MySQL para guardar as informações de login dos usuario, para manter a fluidez da compra.A ideia a principal é vender camisetas com estampas personalizadas.Demonstrando as minhas habilidades para trabalhar com ecomerce no futuro.",
-    tags: ["React", "TypeScript", "MySQL", "CSS"],
-    deployLink: "https://laranjodina.vercel.app/",
-    repoLink: "https://github.com/Dev-BrunoOliveira/STORE",
-    image: "/IMG/LARANJODINA.png",
+      "Este projeto é uma recriação fiel e bem executada da icônica landing page da Tesla, servindo como um excelente estudo de caso de design moderno e desenvolvimento front-end. O foco principal é capturar a estética minimalista, a experiência de usuário imersiva e as animações suaves que caracterizam o site oficial da marca.",
+    tags: ["HTML", "CSS", "JavaScript"],
+    deployLink: "https://tesla-sigma-peach.vercel.app",
+    repoLink: "https://github.com/Dev-BrunoOliveira/TESLA",
+    image: "/IMG/TESLA.png",
   },
   {
     title: "Dinaflix",
@@ -92,15 +102,7 @@ const allProjects: Project[] = [
     repoLink: "https://github.com/Dev-BrunoOliveira/MANDARECEITA",
     image: "/IMG/MANDARECEITAS.png",
   },
-  {
-    title: "Seguradora de Vida",
-    description:
-      "Projeto de uma landing page para uma seguradora de vida, focada em transmitir confiança e profissionalismo. O design é limpo e moderno, com uma paleta de cores sóbria e elementos visuais que reforçam a segurança e a proteção oferecidas pela empresa. A página inclui seções para destacar os benefícios dos planos, depoimentos de clientes satisfeitos e um formulário de contato para facilitar a comunicação com potenciais clientes.",
-    tags: ["React", "CSS", "TypeScript"],
-    deployLink: "https://corretora-zeta.vercel.app/",
-    repoLink: "https://github.com/Dev-BrunoOliveira/CORRETORA",
-    image: "/IMG/SEGURADORA.png",
-  },
+
   {
     title: "Jogo da Cobrinha",
     description:
