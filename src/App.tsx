@@ -56,7 +56,15 @@ const allProjects: Project[] = [
     repoLink: "https://github.com/Dev-BrunoOliveira/CONCURSO",
     image: "/IMG/Concurso.png",
   },
-
+{
+    title: "Vitrine Artística",
+    description:
+      "Desenvolvi este projeto como um conceito de galeria digital para artistas compartilharem suas ilustrações e ampliarem o alcance do seu trabalho. A proposta é permitir que artistas apresentem suas obras online e transformem sua arte em oportunidades de venda para além do público local.Visando também ampliar o seu publico no instagram aonde ja é uma grande vitrine.",
+    tags: ["React", "CSS", "TypeScript"],
+    deployLink: "https://galeria-sigma-ten.vercel.app/",
+    repoLink: "https://github.com/Dev-BrunoOliveira/GALERIA",
+    image: "/IMG/Galeria.png",
+  },
   {
     title: "Site Tesla",
     description:
