@@ -110,20 +110,10 @@ const allProjects: Project[] = [
     repoLink: "https://github.com/Dev-BrunoOliveira/MANDARECEITA",
     image: "/IMG/MANDARECEITAS.png",
   },
-
-  {
-    title: "Jogo da Cobrinha",
-    description:
-      "Testando as minhas habilidades, focada no Javascript, desenvolvi um jogo da cobrinha um grande cla´ssico dos games,onde o jogador controla uma cobra que deve comer alimentos para crescer, evitando colidir com as paredes ou consigo mesma.",
-    tags: ["HTML", "Canva", "CSS", "JavaScript"],
-    deployLink: "https://snake-game-eta-weld.vercel.app/",
-    repoLink: "https://github.com/Dev-BrunoOliveira/SNAKE-GAME",
-    image: "/IMG/SNAKE GAME.png",
-  },
   {
     title: "Calculadora de Notas",
     description:
-      "Desenvolvi com a finalidade de calcular as notas das atividas da minha faculdade, facilitando entender se estou Aprovado ou Reprovado.Compartilhei para ajudar outros estudantes que também precisam dessa funcionalidade.",
+      "Desenvolvi com a finalidade de calcular as notas das atividades da minha faculdade, facilitando entender se estou Aprovado ou Reprovado.Compartilhei para ajudar outros estudantes que também precisam dessa funcionalidade.",
     tags: ["HTML", "CSS", "JavaScript"],
     deployLink: "https://calculadora-de-notas-jade.vercel.app/",
     repoLink: "https://github.com/Dev-BrunoOliveira/CALCULADORA-DE-NOTAS",
