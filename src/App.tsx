@@ -102,13 +102,13 @@ const allProjects: Project[] = [
     image: "/IMG/FILA.png",
   },
   {
-    title: "Comunidade de Receitas",
+    title: "Retro Games",
     description:
-      "A ideia é uma rede social aonde você pode colocar suas receitas e compartilhar com outras pessoas.Montei esse projeto com a finalidade de praticar minhas habilidades com JavaScript.",
-    tags: ["HTML", "CSS", "JavaScript"],
-    deployLink: "https://mandareceita.vercel.app/",
-    repoLink: "https://github.com/Dev-BrunoOliveira/MANDARECEITA",
-    image: "/IMG/MANDARECEITAS.png",
+      "Criei este projeto para praticar minhas habilidades com JavaScript e desenvolver um jogo retro simples, resgatando a nostalgia dos jogos clássicos. O jogo é uma homenagem aos títulos icônicos dos anos 80 e 90, oferecendo uma experiência divertida e desafiadora para os jogadores que apreciam a estética e a jogabilidade dos games antigos.",
+    tags: ["HTML", "CSS", "JavaScript" , "Canvas"],
+    deployLink: "https://snake-game-eta-weld.vercel.app/",
+    repoLink: "https://github.com/Dev-BrunoOliveira/SNAKE-GAME",
+    image: "/IMG/retrogames.png",
   },
   {
     title: "Calculadora de Notas",
