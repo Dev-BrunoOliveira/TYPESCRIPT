@@ -115,7 +115,8 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url("/IMG/TRIUNFODEVENUS.jpg");
   background-size: cover;
   background-position: center;
@@ -170,7 +171,9 @@ body {
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .project-slide:hover {
@@ -299,7 +302,8 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(17, 17, 17, 0.85)),
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),
     url("/IMG/renascentista.jpg");
   background-size: cover;
   background-position: center;
@@ -317,6 +321,16 @@ body {
 }
 .about-text {
   flex: 1;
+  max-width: 600px;
+  margin-bottom: 1.2rem;
+}
+
+.about-text p {
+  margin-bottom: 1.5rem;
+}
+
+.about-text p:last-of-type {
+  margin-bottom: 0;
 }
 
 .about-text h2,
@@ -394,7 +408,10 @@ body {
   border-radius: 12px;
   text-align: center;
   backdrop-filter: blur(4px);
-  transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    background 0.25s ease;
 }
 
 .card-techs:hover {
@@ -494,9 +511,9 @@ body {
 
 .contact-form-container {
   width: 100%;
-  max-width: 800px; 
+  max-width: 800px;
   margin: 40px auto;
-  background: #161616; 
+  background: #161616;
   padding: 40px;
   border-radius: 20px;
   border: 1px solid #222;
@@ -509,7 +526,6 @@ body {
   gap: 20px;
 }
 
-
 .form-row {
   display: flex;
   gap: 20px;
@@ -517,13 +533,13 @@ body {
 }
 
 .form-row input {
-  flex: 1; 
+  flex: 1;
   background: #0d0d0d;
   border: 1px solid #333;
   padding: 16px;
   border-radius: 10px;
   color: #fff;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 1rem;
 }
 
@@ -534,16 +550,15 @@ body {
   padding: 16px;
   border-radius: 10px;
   color: #fff;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 1rem;
   min-height: 150px;
-  resize: none; 
+  resize: none;
 }
 
-
 .send-btn {
-  align-self: flex-end; 
-  background: #0072b1; 
+  align-self: flex-end;
+  background: #0072b1;
   color: white;
   padding: 14px 30px;
   border: none;
@@ -564,12 +579,12 @@ body {
 }
 
 .back-btn {
-  background: #222; 
+  background: #222;
   color: #fff;
   padding: 12px 25px;
   border: 1px solid #333;
   border-radius: 8px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 0.8rem;
   text-transform: uppercase;

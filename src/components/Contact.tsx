@@ -54,7 +54,7 @@ function Contact() {
             >
               <i className="fa-solid fa-circle-check"></i>
               <h3>E-mail enviado com sucesso!</h3>
-              <p>Obrigado, Bruno Oliveira entrará em contato em breve.</p>
+              <p>Obrigado, entraremos em contato em breve.</p>
               <button onClick={() => setStatus(null)} className="back-btn">
                 Enviar outra mensagem
               </button>

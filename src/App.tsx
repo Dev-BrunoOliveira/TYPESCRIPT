@@ -32,7 +32,7 @@ const allProjects: Project[] = [
   {
     title: "Loja de Camisetas",
     description:
-      "Colocando em pratica o meu conhecimento de consumo de API e trabalhando banco de dados com MySQL para guardar as informações de login dos usuario, para manter a fluidez da compra.A ideia a principal é vender camisetas com estampas personalizadas.Demonstrando as minhas habilidades para trabalhar com ecomerce no futuro.",
+      "Colocando em prática o meu conhecimento de consumo de API e trabalhando banco de dados com MySQL para guardar as informações de login dos usuario, para manter a fluidez da compra.A ideia principal é vender camisetas com estampas personalizadas.Demonstrando as minhas habilidades para trabalhar com ecomerce no futuro.",
     tags: ["React", "TypeScript", "MySQL", "CSS"],
     deployLink: "https://laranjodina.vercel.app/",
     repoLink: "https://github.com/Dev-BrunoOliveira/STORE",
