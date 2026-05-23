@@ -42,10 +42,10 @@ const allProjects: Project[] = [
     title: "Guia de Restaurantes",
     description:
       "Este projeto é um guia de restaurantes pessoal e curado, nascido da paixão do desenvolvedor por gastronomia e por explorar novos lugares em São Paulo. O site funciona como um blog visual, onde eu compartilho minhas experiências e recomendações, oferecendo um roteiro confiável para quem busca novas opções culinárias na cidade.",
-    tags: ["HTML", "CSS", "JavaScript"],
-    deployLink: "https://restaurantes-two.vercel.app/",
-    repoLink: "https://github.com/Dev-BrunoOliveira/RESTAURANTES",
-    image: "/IMG/RESTAURANTES.jpg",
+    tags: ["HTML", "CSS", "React", "TypeScript"],
+    deployLink: "https://guia-pi.vercel.app/",
+    repoLink: "https://github.com/Dev-BrunoOliveira/GUIA",
+    image: "/IMG/Guia.jpeg",
   },
   {
     title: "Concurso TJ",
@@ -56,7 +56,7 @@ const allProjects: Project[] = [
     repoLink: "https://github.com/Dev-BrunoOliveira/CONCURSO",
     image: "/IMG/Concurso.png",
   },
-{
+  {
     title: "Vitrine Artística",
     description:
       "Desenvolvi este projeto como um conceito de galeria digital para artistas compartilharem suas ilustrações e ampliarem o alcance do seu trabalho. A proposta é permitir que artistas apresentem suas obras online e transformem sua arte em oportunidades de venda para além do público local.Visando também ampliar o seu publico no instagram aonde ja é uma grande vitrine.",
@@ -105,7 +105,7 @@ const allProjects: Project[] = [
     title: "Retro Games",
     description:
       "Criei este projeto para praticar minhas habilidades com JavaScript e desenvolver um jogo retro simples, resgatando a nostalgia dos jogos clássicos. O jogo é uma homenagem aos títulos icônicos dos anos 80 e 90, oferecendo uma experiência divertida e desafiadora para os jogadores que apreciam a estética e a jogabilidade dos games antigos.",
-    tags: ["HTML", "CSS", "JavaScript" , "Canvas"],
+    tags: ["HTML", "CSS", "JavaScript", "Canvas"],
     deployLink: "https://snake-game-eta-weld.vercel.app/",
     repoLink: "https://github.com/Dev-BrunoOliveira/SNAKE-GAME",
     image: "/IMG/retrogames.png",
