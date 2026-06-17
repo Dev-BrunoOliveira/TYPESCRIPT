@@ -14,7 +14,7 @@ const allProjects: Project[] = [
   {
     title: "Seguradora de Vida",
     description:
-      "Projeto de uma landing page para uma seguradora de vida, focada em transmitir confiança e profissionalismo. O design é limpo e moderno, com uma paleta de cores sóbria e elementos visuais que reforçam a segurança e a proteção oferecidas pela empresa. A página inclui seções para destacar os benefícios dos planos, depoimentos de clientes satisfeitos e um formulário de contato para facilitar a comunicação com potenciais clientes.",
+      "Landing page para seguradora de vida com foco em conversão. Design sóbrio com seções de benefícios, depoimentos e formulário de contato. Desenvolvida com React e TypeScript.",
     tags: ["React", "CSS", "TypeScript"],
     deployLink: "https://corretora-zeta.vercel.app/",
     repoLink: "https://github.com/Dev-BrunoOliveira/CORRETORA",
@@ -23,7 +23,7 @@ const allProjects: Project[] = [
   {
     title: "Controle Financeiro",
     description:
-      "Um aplicativo de controle financeiro pessoal desenvolvido para ajudar os usuários a gerenciar suas finanças de maneira eficiente. Com funcionalidades que permitem o registro de ganhos e gastos, trabalhei o consumo de API tendo a possibilidade de logar com a conta do Google,passando maior credibilidade para o usuário, e utilizando o Supabase para armazenar os dados de forma segura e escalável. O design é moderno e responsivo, garantindo uma experiência de usuário fluida em dispositivos móveis e desktop.",
+      "App de finanças pessoais com registro de ganhos e gastos, autenticação via Google e armazenamento no Supabase. Desenvolvido com React, TypeScript e Gemini API.",
     tags: ["React", "TypeScript", "CSS", "Supabase", "Gemini API"],
     deployLink: "https://carteira-self.vercel.app/",
     repoLink: "https://github.com/Dev-BrunoOliveira/CARTEIRA",
@@ -32,7 +32,7 @@ const allProjects: Project[] = [
   {
     title: "Loja de Camisetas",
     description:
-      "Colocando em prática o meu conhecimento de consumo de API e trabalhando banco de dados com MySQL para guardar as informações de login dos usuario, para manter a fluidez da compra.A ideia principal é vender camisetas com estampas personalizadas.Demonstrando as minhas habilidades para trabalhar com ecomerce no futuro.",
+      "E-commerce de camisetas com estampas personalizadas, autenticação de usuários e banco de dados MySQL. Projeto focado em consumo de API e fluxo de compra fluido.",
     tags: ["React", "TypeScript", "MySQL", "CSS"],
     deployLink: "https://laranjodina.vercel.app/",
     repoLink: "https://github.com/Dev-BrunoOliveira/STORE",
@@ -41,7 +41,7 @@ const allProjects: Project[] = [
   {
     title: "Guia de Restaurantes",
     description:
-      "Este projeto é um guia de restaurantes pessoal e curado, nascido da paixão do desenvolvedor por gastronomia e por explorar novos lugares em São Paulo. O site funciona como um blog visual, onde eu compartilho minhas experiências e recomendações, oferecendo um roteiro confiável para quem busca novas opções culinárias na cidade.",
+      "Blog visual com curadoria pessoal de restaurantes em São Paulo. Interface focada em experiência de leitura, com recomendações e roteiros gastronômicos pela cidade.",
     tags: ["HTML", "CSS", "React", "TypeScript"],
     deployLink: "https://guia-pi.vercel.app/",
     repoLink: "https://github.com/Dev-BrunoOliveira/GUIA",
@@ -50,7 +50,7 @@ const allProjects: Project[] = [
   {
     title: "Concurso TJ",
     description:
-      "Com o objetivo de democratizar o acesso a materiais de estudo para concursos, identifiquei que a maioria das plataformas preparatórias para Escrevente do TJ-SP exigia um investimento financeiro. Em resposta a essa lacuna, desenvolvi um quiz interativo e totalmente gratuito, projetado para auxiliar os candidatos a testarem e aprofundarem seus conhecimentos de forma eficaz para o exame.",
+      "Quiz interativo e gratuito para candidatos ao cargo de Escrevente do TJ-SP. Desenvolvido como alternativa acessível às plataformas pagas do mercado.",
     tags: ["HTML", "CSS", "JavaScript"],
     deployLink: "https://concurso-nine.vercel.app/",
     repoLink: "https://github.com/Dev-BrunoOliveira/CONCURSO",
@@ -59,7 +59,7 @@ const allProjects: Project[] = [
   {
     title: "Vitrine Artística",
     description:
-      "Desenvolvi este projeto como um conceito de galeria digital para artistas compartilharem suas ilustrações e ampliarem o alcance do seu trabalho. A proposta é permitir que artistas apresentem suas obras online e transformem sua arte em oportunidades de venda para além do público local.Visando também ampliar o seu publico no instagram aonde ja é uma grande vitrine.",
+      "Galeria digital para artistas exibirem ilustrações e expandirem alcance além do público local. Conceito voltado para transformar seguidores em potenciais compradores.",
     tags: ["React", "CSS", "TypeScript"],
     deployLink: "https://galeria-sigma-ten.vercel.app/",
     repoLink: "https://github.com/Dev-BrunoOliveira/GALERIA",
@@ -68,7 +68,7 @@ const allProjects: Project[] = [
   {
     title: "Site Tesla",
     description:
-      "Este projeto é uma recriação fiel e bem executada da icônica landing page da Tesla, servindo como um excelente estudo de caso de design moderno e desenvolvimento front-end. O foco principal é capturar a estética minimalista, a experiência de usuário imersiva e as animações suaves que caracterizam o site oficial da marca.",
+      "Recriação da landing page da Tesla como estudo de design minimalista e front-end. Foco em UX imersiva e animações suaves fiéis à estética da marca.",
     tags: ["HTML", "CSS", "JavaScript"],
     deployLink: "https://tesla-sigma-peach.vercel.app",
     repoLink: "https://github.com/Dev-BrunoOliveira/TESLA",
@@ -77,7 +77,7 @@ const allProjects: Project[] = [
   {
     title: "Dinaflix",
     description:
-      "Este projeto é uma recriação de front-end da interface de usuário da Netflix, batizada de Dinaflix devido direitos autorais. O objetivo é replicar com fidelidade o design imersivo, o layout característico e as micro-interações que tornam a experiência da plataforma de streaming tão reconhecível e intuitiva.",
+      "Clone da interface da Netflix com foco em fidelidade visual, layout de streaming e micro-interações. Estudo prático de UI complexa e experiência imersiva.",
     tags: ["HTML", "CSS", "JavaScript"],
     deployLink: "https://dinaflix.vercel.app/",
     repoLink: "https://github.com/Dev-BrunoOliveira/NETFLIX",
@@ -86,7 +86,7 @@ const allProjects: Project[] = [
   {
     title: "Pizzaria Donatello",
     description:
-      "Este projeto é uma landing page vibrante e funcional para uma pizzaria fictícia chamada Donatello, focada em criar uma experiência de usuário convidativa e direta. Ele serve como um ótimo exemplo de uma interface comercial, demonstrando como apresentar produtos, serviços e informações de contato de forma eficaz em uma única página.",
+      "Landing page comercial para pizzaria fictícia com apresentação de produtos, serviços e contato em página única. Interface convidativa focada em conversão.",
     tags: ["React", "Vite", "JavaScript", "CSS"],
     deployLink: "https://pizzaria-six-gray.vercel.app/",
     repoLink: "https://github.com/Dev-BrunoOliveira/PIZZARIA",
@@ -95,7 +95,7 @@ const allProjects: Project[] = [
   {
     title: "Fila de Editores",
     description:
-      "Na antiga empresa na qual eu trabalhava, tinhamos que subir para o sistema MaxSystem todo material que era editado na agencia e tornar visivel para os clientes no Aplicativo. Então para facilitar a rotina criei um Sistema de fila para organizar a ordem de editores que vão upar o material.",
+      "Ferramenta interna para organizar a fila de editores no upload de materiais ao MaxSystem. Desenvolvido para otimizar a rotina da agência e reduzir conflitos de ordem de envio.",
     tags: ["Firebase", "Vite", "JavaScript"],
     deployLink: "https://filamaxsystem.vercel.app/",
     repoLink: "https://github.com/Dev-BrunoOliveira/FILAMAXSYSTEM",
@@ -104,7 +104,7 @@ const allProjects: Project[] = [
   {
     title: "Retro Games",
     description:
-      "Criei este projeto para praticar minhas habilidades com JavaScript e desenvolver um jogo retro simples, resgatando a nostalgia dos jogos clássicos. O jogo é uma homenagem aos títulos icônicos dos anos 80 e 90, oferecendo uma experiência divertida e desafiadora para os jogadores que apreciam a estética e a jogabilidade dos games antigos.",
+      "Jogo clássico desenvolvido para praticar JavaScript puro, resgatando a estética e jogabilidade dos títulos icônicos dos anos 80 e 90.",
     tags: ["HTML", "CSS", "JavaScript", "Canvas"],
     deployLink: "https://snake-game-eta-weld.vercel.app/",
     repoLink: "https://github.com/Dev-BrunoOliveira/SNAKE-GAME",
@@ -113,7 +113,7 @@ const allProjects: Project[] = [
   {
     title: "Calculadora de Notas",
     description:
-      "Desenvolvi com a finalidade de calcular as notas das atividades da minha faculdade, facilitando entender se estou Aprovado ou Reprovado.Compartilhei para ajudar outros estudantes que também precisam dessa funcionalidade.",
+      "Calculadora desenvolvida para apurar notas das atividades da faculdade e indicar aprovação ou reprovação. Compartilhada para ajudar outros estudantes da mesma grade.",
     tags: ["HTML", "CSS", "JavaScript"],
     deployLink: "https://calculadora-de-notas-jade.vercel.app/",
     repoLink: "https://github.com/Dev-BrunoOliveira/CALCULADORA-DE-NOTAS",
