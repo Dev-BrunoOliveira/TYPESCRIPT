@@ -42,8 +42,8 @@ Iniciei minha carreira no design gráfico e edição de imagens, atuando em agê
 
           
           <a
-            href="/doc/BrunoOliveiraIA[FullStack].pdf"
-            download="BrunoOliveiraIA[FullStack].pdf"
+            href="/doc/BrunoOliveira-Dev[FullStack].pdf"
+            download="BrunoOliveira-Dev[FullStack].pdf"
             className="btn-cv"
           >
             Baixar Currículo
