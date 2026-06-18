@@ -530,6 +530,37 @@ body {
   color: #64ffda;
 }
 
+.techs-categories {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.techs-category-block {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  flex: 1 1 280px;
+  max-width: 420px;
+}
+
+.techs-category-title {
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  opacity: 0.6;
+  padding-left: 0.25rem;
+}
+
+.techs-carousel {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
 .contact-content,
 .curriculo {
   text-align: center;
