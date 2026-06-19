@@ -6,6 +6,13 @@ interface TechCategory {
   techs: Tech[];
 }
 
+const pillars = [
+  { icon: "🖥️", title: "Full Stack", description: "Do front ao back, construindo aplicações completas com React, TypeScript e FastAPI." },
+  { icon: "🎨", title: "UI / UX", description: "Background em design e tatuagem que molda cada detalhe de interface e experiência." },
+  { icon: "🤖", title: "IA & Automação", description: "Fluxos inteligentes com n8n, integração com LLMs e automação de processos reais." },
+  { icon: "🗄️", title: "Banco de Dados", description: "Modelagem e integração com Supabase, PostgreSQL, MySQL e Firebase." },
+];
+
 const techCategories: TechCategory[] = [
   {
     category: "Frontend",
@@ -48,7 +55,7 @@ const techCategories: TechCategory[] = [
       { name: "n8n", imgSrc: "/IMG/techs/n8n.png" },
       { name: "Gemini API", imgSrc: "/IMG/techs/geminiAPI.png" },
       { name: "ChatGPT API", imgSrc: "/IMG/techs/chatgpt.png" },
-      {name: "Claude", imgSrc: "/IMG/techs/claude.jpg" },
+      { name: "Claude", imgSrc: "/IMG/techs/claude.jpg" },
       { name: "Copilot", imgSrc: "/IMG/techs/microsoft-copilot.jpg" },
     ],
   },
@@ -57,6 +64,26 @@ const techCategories: TechCategory[] = [
 function Techs() {
   return (
     <section className="techs-section">
+
+      {/* 4 cards de pilares */}
+      <div className="techs-pillars">
+        {pillars.map((pillar, idx) => (
+          <motion.div
+            className="pillar-card"
+            key={pillar.title}
+            initial={{ opacity: 0, y: 24 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.4, delay: idx * 0.1 }}
+          >
+            <span className="pillar-icon">{pillar.icon}</span>
+            <h3 className="pillar-title">{pillar.title}</h3>
+            <p className="pillar-description">{pillar.description}</p>
+          </motion.div>
+        ))}
+      </div>
+
+      {/* Grid de stacks */}
       <h2 className="techs-title">Minhas Principais Stacks</h2>
 
       <div className="techs-categories">
