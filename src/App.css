@@ -120,7 +120,7 @@ body {
   height: 100%;
   background:
     linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url("/IMG/TRIUNFODEVENUS.jpg");
+    url("/IMG/TRIUNFODEVENUS.webp");
   background-size: cover;
   background-position: center;
   z-index: -1;
@@ -391,7 +391,7 @@ body {
   height: 100%;
   background:
     linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.85)),
-    url("/IMG/renascentista.jpg");
+    url("/IMG/renascentista.webp");
   background-size: cover;
   background-position: center;
 
@@ -542,7 +542,6 @@ body {
   opacity: 0.6;
 }
 
-/* Responsivo */
 @media (max-width: 768px) {
   .techs-pillars {
     grid-template-columns: repeat(2, 1fr);

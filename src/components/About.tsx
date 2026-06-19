@@ -11,7 +11,7 @@ function About() {
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
         >
-          <img src="/IMG/20br.jpg" alt="Bruno Oliveira" />
+          <img src="/IMG/20br.webp" alt="Bruno Oliveira" />
         </motion.div>
         <motion.div
           className="about-text"
