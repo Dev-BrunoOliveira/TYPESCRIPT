@@ -18,7 +18,7 @@ const allProjects: Project[] = [
     tags: ["React", "CSS", "TypeScript"],
     deployLink: "https://corretora-zeta.vercel.app/",
     repoLink: "https://github.com/Dev-BrunoOliveira/CORRETORA",
-    image: "/IMG/SEGURADORA.png",
+    image: "/IMG/Seguradora.webp",
   },
   {
     title: "Controle Financeiro",
@@ -27,7 +27,7 @@ const allProjects: Project[] = [
     tags: ["React", "TypeScript", "CSS", "Supabase", "Gemini API"],
     deployLink: "https://carteira-self.vercel.app/",
     repoLink: "https://github.com/Dev-BrunoOliveira/CARTEIRA",
-    image: "/IMG/CARTEIRA.png",
+    image: "/IMG/Carteira.webp",
   },
   {
     title: "Loja de Camisetas",
@@ -36,7 +36,7 @@ const allProjects: Project[] = [
     tags: ["React", "TypeScript", "MySQL", "CSS"],
     deployLink: "https://laranjodina.vercel.app/",
     repoLink: "https://github.com/Dev-BrunoOliveira/STORE",
-    image: "/IMG/LARANJODINA.png",
+    image: "/IMG/Loja.webp",
   },
   {
     title: "Guia de Restaurantes",
@@ -45,7 +45,7 @@ const allProjects: Project[] = [
     tags: ["HTML", "CSS", "React", "TypeScript"],
     deployLink: "https://guia-pi.vercel.app/",
     repoLink: "https://github.com/Dev-BrunoOliveira/GUIA",
-    image: "/IMG/Guia.jpeg",
+    image: "/IMG/Guia.webp",
   },
   {
     title: "Concurso TJ",
@@ -54,7 +54,7 @@ const allProjects: Project[] = [
     tags: ["HTML", "CSS", "JavaScript"],
     deployLink: "https://concurso-nine.vercel.app/",
     repoLink: "https://github.com/Dev-BrunoOliveira/CONCURSO",
-    image: "/IMG/Concurso.png",
+    image: "/IMG/Concurso.webp",
   },
   {
     title: "Vitrine Artística",
@@ -63,7 +63,7 @@ const allProjects: Project[] = [
     tags: ["React", "CSS", "TypeScript"],
     deployLink: "https://galeria-sigma-ten.vercel.app/",
     repoLink: "https://github.com/Dev-BrunoOliveira/GALERIA",
-    image: "/IMG/Galeria.png",
+    image: "/IMG/Galeria.webp",
   },
   {
     title: "Site Tesla",
@@ -72,7 +72,7 @@ const allProjects: Project[] = [
     tags: ["HTML", "CSS", "JavaScript"],
     deployLink: "https://tesla-sigma-peach.vercel.app",
     repoLink: "https://github.com/Dev-BrunoOliveira/TESLA",
-    image: "/IMG/TESLA.png",
+    image: "/IMG/Tesla.webp",
   },
   {
     title: "Dinaflix",
@@ -81,7 +81,7 @@ const allProjects: Project[] = [
     tags: ["HTML", "CSS", "JavaScript"],
     deployLink: "https://dinaflix.vercel.app/",
     repoLink: "https://github.com/Dev-BrunoOliveira/NETFLIX",
-    image: "/IMG/NETFLIX.png",
+    image: "/IMG/Netflix.webp",
   },
   {
     title: "Pizzaria Donatello",
@@ -90,16 +90,7 @@ const allProjects: Project[] = [
     tags: ["React", "Vite", "JavaScript", "CSS"],
     deployLink: "https://pizzaria-six-gray.vercel.app/",
     repoLink: "https://github.com/Dev-BrunoOliveira/PIZZARIA",
-    image: "/IMG/PIZZARIA.png",
-  },
-  {
-    title: "Fila de Editores",
-    description:
-      "Ferramenta interna para organizar a fila de editores no upload de materiais ao MaxSystem. Desenvolvido para otimizar a rotina da agência e reduzir conflitos de ordem de envio.",
-    tags: ["Firebase", "Vite", "JavaScript"],
-    deployLink: "https://filamaxsystem.vercel.app/",
-    repoLink: "https://github.com/Dev-BrunoOliveira/FILAMAXSYSTEM",
-    image: "/IMG/FILA.png",
+    image: "/IMG/Pizzaria.webp",
   },
   {
     title: "Retro Games",
