@@ -57,6 +57,15 @@ const allProjects: Project[] = [
     image: "/IMG/Concurso.webp",
   },
   {
+    title: "Dinaflix",
+    description:
+      "Clone da interface da Netflix com foco em fidelidade visual, layout de streaming e micro-interações. Estudo prático de UI complexa e experiência imersiva.",
+    tags: ["React", "TypeScript", "Vite", "CSS"],
+    deployLink: "https://dinaflixpremium.vercel.app/",
+    repoLink: "https://github.com/Dev-BrunoOliveira/DINAFLIXPREMIUM",
+    image: "/IMG/Dinaflix.webp",
+  },
+  {
     title: "Vitrine Artística",
     description:
       "Galeria digital para artistas exibirem ilustrações e expandirem alcance além do público local. Conceito voltado para transformar seguidores em potenciais compradores.",
@@ -73,15 +82,6 @@ const allProjects: Project[] = [
     deployLink: "https://tesla-sigma-peach.vercel.app",
     repoLink: "https://github.com/Dev-BrunoOliveira/TESLA",
     image: "/IMG/Tesla.webp",
-  },
-  {
-    title: "Dinaflix",
-    description:
-      "Clone da interface da Netflix com foco em fidelidade visual, layout de streaming e micro-interações. Estudo prático de UI complexa e experiência imersiva.",
-    tags: ["HTML", "CSS", "JavaScript"],
-    deployLink: "https://dinaflix.vercel.app/",
-    repoLink: "https://github.com/Dev-BrunoOliveira/NETFLIX",
-    image: "/IMG/Netflix.webp",
   },
   {
     title: "Pizzaria Donatello",
