@@ -1,6 +1,9 @@
 import { motion } from 'framer-motion';
+import { useLanguage } from '../contexts/LanguageContext';
 
 function Hero() {
+  const { t } = useLanguage();
+
   return (
     <section id="inicio" className="hero">
       <motion.h1
@@ -8,7 +11,7 @@ function Hero() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
       >
-        FullStack Bruno Oliveira
+        {t("hero.title")}
       </motion.h1>
 
       <motion.p
@@ -16,8 +19,7 @@ function Hero() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, delay: 0.3 }}
       >
-        Desenvolvo interfaces que unem lógica de back-end com sensibilidade
-        visual de quem veio do design.
+        {t("hero.description")}
       </motion.p>
 
       <motion.div
@@ -26,7 +28,7 @@ function Hero() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, delay: 0.5 }}
       >
-        <a href="#projetos" className="btn-primary">Ver projetos</a>
+        <a href="#projetos" className="btn-primary">{t("hero.viewProjects")}</a>
       </motion.div>
     </section>
   );

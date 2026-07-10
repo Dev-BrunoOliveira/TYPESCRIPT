@@ -1,6 +1,9 @@
 import { motion } from "framer-motion";
+import { useLanguage } from "../contexts/LanguageContext";
 
 function About() {
+  const { t } = useLanguage();
+
   return (
     <section id="sobre" className="about-section">
       <div className="about-content">
@@ -20,53 +23,21 @@ function About() {
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
         >
-          <h2>Sobre</h2>
+          <h2>{t("about.title")}</h2>
 
-<p>
-  Tenho 30 anos e resido em São Paulo, Brasil. Sou estudante de Análise e
-  Desenvolvimento de Sistemas na Faculdade FAM, com previsão de conclusão
-  em agosto de 2027.
-</p>
+<p>{t("about.p1")}</p>
+<p>{t("about.p2")}</p>
+<p>{t("about.p3")}</p>
+<p>{t("about.p4")}</p>
+<p>{t("about.p5")}</p>
+<p>{t("about.p6")}</p>
 
-<p>
-  Minha trajetória com tecnologia sempre foi movida pela curiosidade e pela
-  criação. Iniciei minha carreira no design gráfico e edição de imagens,
-  atuando em agência, onde desenvolvi a capacidade de unir estética,
-  usabilidade e lógica.
-</p>
-
-<p>
-  Antes disso, trabalhei por sete anos como tatuador, experiência que
-  refinou meu senso de composição visual, cores, precisão e atenção aos
-  detalhes.
-</p>
-
-<p>
-  Hoje, aplico esse olhar criativo no desenvolvimento front-end, criando
-  interfaces modernas, responsivas e focadas em experiência do usuário,
-  utilizando tecnologias como React, TypeScript, Tailwind CSS e Vite.
-</p>
-
-<p>
-  Paralelamente, venho expandindo meus conhecimentos em back-end, com foco
-  em integrações, bancos de dados e lógica de negócio, buscando construir
-  soluções mais completas e funcionais.
-</p>
-
-<p>
-  Meu objetivo é atuar em projetos onde design e tecnologia caminham
-  juntos, transformando ideias em experiências digitais eficientes e
-  intuitivas.
-</p>
-
-
-          
           <a
             href="/doc/BrunoOliveira-Dev[FullStack].pdf"
             download="BrunoOliveira-Dev[FullStack].pdf"
             className="btn-cv"
           >
-            Baixar Currículo
+            {t("about.downloadCv")}
           </a>
         </motion.div>
       </div>

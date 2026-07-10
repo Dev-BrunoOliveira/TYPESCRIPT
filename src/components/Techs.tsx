@@ -1,21 +1,15 @@
 import { motion } from "framer-motion";
 import type { Tech } from "../types";
+import { useLanguage } from "../contexts/LanguageContext";
 
 interface TechCategory {
-  category: string;
+  categoryKey: string;
   techs: Tech[];
 }
 
-const pillars = [
-  { icon: "🖥️", title: "Full Stack", description: "Do front ao back, construindo aplicações completas com React, TypeScript e FastAPI." },
-  { icon: "🎨", title: "UI / UX", description: "Background em design e tatuagem que molda cada detalhe de interface e experiência." },
-  { icon: "🤖", title: "IA & Automação", description: "Fluxos inteligentes com n8n, integração com LLMs e automação de processos reais." },
-  { icon: "🗄️", title: "Banco de Dados", description: "Modelagem e integração com Supabase, PostgreSQL, MySQL e Firebase." },
-];
-
 const techCategories: TechCategory[] = [
   {
-    category: "Frontend",
+    categoryKey: "frontend",
     techs: [
       { name: "HTML", imgSrc: "/IMG/techs/html.png" },
       { name: "CSS", imgSrc: "/IMG/techs/css-3.png" },
@@ -26,7 +20,7 @@ const techCategories: TechCategory[] = [
     ],
   },
   {
-    category: "Backend",
+    categoryKey: "backend",
     techs: [
       { name: "Node.js", imgSrc: "/IMG/techs/nodejs.png" },
       { name: "Python", imgSrc: "/IMG/techs/python.png" },
@@ -34,7 +28,7 @@ const techCategories: TechCategory[] = [
     ],
   },
   {
-    category: "Banco de Dados",
+    categoryKey: "database",
     techs: [
       { name: "Supabase", imgSrc: "/IMG/techs/supabase.jpg" },
       { name: "PostgreSQL", imgSrc: "/IMG/techs/postgresql.png" },
@@ -43,14 +37,14 @@ const techCategories: TechCategory[] = [
     ],
   },
   {
-    category: "Cloud & DevOps",
+    categoryKey: "cloud",
     techs: [
       { name: "Google Cloud", imgSrc: "/IMG/techs/googleCloud.png" },
       { name: "Docker", imgSrc: "/IMG/techs/docker.png" },
     ],
   },
   {
-    category: "Automação & IA",
+    categoryKey: "ai",
     techs: [
       { name: "n8n", imgSrc: "/IMG/techs/n8n.png" },
       { name: "Gemini API", imgSrc: "/IMG/techs/geminiAPI.png" },
@@ -62,6 +56,9 @@ const techCategories: TechCategory[] = [
 ];
 
 function Techs() {
+  const { t } = useLanguage();
+  const pillars = t("techs.pillars") as { icon: string, title: string, description: string }[];
+
   return (
     <section className="techs-section">
 
@@ -84,19 +81,19 @@ function Techs() {
       </div>
 
       {/* Grid de stacks */}
-      <h2 className="techs-title">Minhas Principais Stacks</h2>
+      <h2 className="techs-title">{t("techs.title")}</h2>
 
       <div className="techs-categories">
         {techCategories.map((group, groupIdx) => (
           <motion.div
             className="techs-category-block"
-            key={group.category}
+            key={group.categoryKey}
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.4, delay: groupIdx * 0.1 }}
           >
-            <h3 className="techs-category-title">{group.category}</h3>
+            <h3 className="techs-category-title">{t(`techs.categories.${group.categoryKey}`)}</h3>
 
             <div className="techs-carousel">
               {group.techs.map((tech, idx) => (

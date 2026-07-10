@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import type { Project } from "../types";
+import { useLanguage } from "../contexts/LanguageContext";
 
 interface Props {
   project: Project;
@@ -7,6 +8,8 @@ interface Props {
 }
 
 function ProjectCard({ project, index }: Props) {
+  const { t } = useLanguage();
+
   return (
     <motion.div
       className="project-slide"
@@ -35,7 +38,7 @@ function ProjectCard({ project, index }: Props) {
             rel="noopener noreferrer"
             className="btn"
           >
-            Acessar
+            {t("projects.access")}
           </a>
           <a
             href={project.repoLink}
@@ -43,7 +46,7 @@ function ProjectCard({ project, index }: Props) {
             rel="noopener noreferrer"
             className="btn"
           >
-            Repositório
+            {t("projects.repo")}
           </a>
         </div>
       </div>

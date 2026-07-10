@@ -1,7 +1,9 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
+import { useLanguage } from "../contexts/LanguageContext";
 
 function Contact() {
+  const { t } = useLanguage();
   const [status, setStatus] = useState<null | "sending" | "success" | "error">(
     null,
   );
@@ -41,7 +43,7 @@ function Contact() {
         viewport={{ once: true }}
         transition={{ duration: 0.8 }}
       >
-        <h2>Contato</h2>
+        <h2>{t("contact.title")}</h2>
 
         <AnimatePresence mode="wait">
           {status === "success" ? (
@@ -53,34 +55,34 @@ function Contact() {
               exit={{ opacity: 0 }}
             >
               <i className="fa-solid fa-circle-check"></i>
-              <h3>E-mail enviado com sucesso!</h3>
-              <p>Obrigado, entraremos em contato em breve.</p>
+              <h3>{t("contact.successTitle")}</h3>
+              <p>{t("contact.successMsg")}</p>
               <button onClick={() => setStatus(null)} className="back-btn">
-                Enviar outra mensagem
+                {t("contact.sendAnother")}
               </button>
             </motion.div>
           ) : (
             <motion.div key="form" exit={{ opacity: 0, y: -20 }}>
-              <p>Mande sua mensagem abaixo:</p>
+              <p>{t("contact.formMsg")}</p>
               <div className="contact-form-container">
                 <form onSubmit={handleSubmit} className="direct-form">
                   <div className="form-row">
                     <input
                       type="text"
                       name="name"
-                      placeholder="Seu Nome"
+                      placeholder={t("contact.namePlaceholder")}
                       required
                     />
                     <input
                       type="email"
                       name="email"
-                      placeholder="Seu E-mail"
+                      placeholder={t("contact.emailPlaceholder")}
                       required
                     />
                   </div>
                   <textarea
                     name="message"
-                    placeholder="Como posso te ajudar?"
+                    placeholder={t("contact.messagePlaceholder")}
                     rows={4}
                     required
                   ></textarea>
@@ -90,7 +92,7 @@ function Contact() {
                     className="send-btn"
                     disabled={status === "sending"}
                   >
-                    {status === "sending" ? "Enviando..." : "Enviar Mensagem"}
+                    {status === "sending" ? t("contact.sending") : t("contact.sendBtn")}
                     <i className="fa-solid fa-paper-plane"></i>
                   </button>
                 </form>
