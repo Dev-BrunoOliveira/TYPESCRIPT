@@ -8,7 +8,9 @@ interface LanguageContextType {
   t: (key: string) => any;
 }
 
-const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
+const LanguageContext = createContext<LanguageContextType | undefined>(
+  undefined,
+);
 
 const translations: Record<Language, any> = {
   pt: {
@@ -20,7 +22,8 @@ const translations: Record<Language, any> = {
     },
     hero: {
       title: "FullStack Bruno Oliveira",
-      description: "Desenvolvo interfaces que unem lógica de back-end com sensibilidade visual de quem veio do design.",
+      description:
+        "Desenvolvo interfaces que unem lógica de back-end com sensibilidade visual de quem veio do design.",
       viewProjects: "Ver projetos",
     },
     about: {
@@ -41,7 +44,8 @@ const translations: Record<Language, any> = {
       data: [
         {
           title: "Seguradora de Vida",
-          description: "Landing page para seguradora de vida com foco em conversão. Design sóbrio com seções de benefícios, depoimentos e formulário de contato. Desenvolvida com React e TypeScript.",
+          description:
+            "Landing page para seguradora de vida com foco em conversão. Design sóbrio com seções de benefícios, depoimentos e formulário de contato. Desenvolvida com React e TypeScript.",
           tags: ["React", "CSS", "TypeScript"],
           deployLink: "https://corretora-zeta.vercel.app/",
           repoLink: "https://github.com/Dev-BrunoOliveira/CORRETORA",
@@ -49,7 +53,8 @@ const translations: Record<Language, any> = {
         },
         {
           title: "Controle Financeiro",
-          description: "App de finanças pessoais com registro de ganhos e gastos, autenticação via Google e armazenamento no Supabase. Desenvolvido com React, TypeScript e Gemini API.",
+          description:
+            "App de finanças pessoais com registro de ganhos e gastos, autenticação via Google e armazenamento no Supabase. Desenvolvido com React, TypeScript e Gemini API.",
           tags: ["React", "TypeScript", "CSS", "Supabase", "Gemini API"],
           deployLink: "https://carteira-self.vercel.app/",
           repoLink: "https://github.com/Dev-BrunoOliveira/CARTEIRA",
@@ -57,15 +62,26 @@ const translations: Record<Language, any> = {
         },
         {
           title: "Loja de Camisetas",
-          description: "E-commerce de camisetas com estampas personalizadas, autenticação de usuários e banco de dados MySQL. Projeto focado em consumo de API e fluxo de compra fluido.",
+          description:
+            "E-commerce de camisetas com estampas personalizadas, autenticação de usuários e banco de dados MySQL. Projeto focado em consumo de API e fluxo de compra fluido.",
           tags: ["React", "TypeScript", "MySQL", "CSS"],
           deployLink: "https://laranjodina.vercel.app/",
           repoLink: "https://github.com/Dev-BrunoOliveira/STORE",
           image: "/IMG/Loja.webp",
         },
         {
+          title: "Laranjolingo",
+          description:
+            "Uma forma divertida de aprender inglês com exercícios interativos, gamificação e conteúdo personalizado.Me inspirei bastante no duolingo, mas com uma abordagem mais lúdica e voltada para a experiência do usuário.",
+          tags: ["React", "TypeScript", "CSS"],
+          deployLink: "https://laranjolingo.vercel.app/",
+          repoLink: "https://github.com/Dev-BrunoOliveira/ENGLISH",
+          image: "/IMG/Laranjolingo.webp",
+        },
+        {
           title: "Guia de Restaurantes",
-          description: "Blog visual com curadoria pessoal de restaurantes em São Paulo. Interface focada em experiência de leitura, com recomendações e roteiros gastronômicos pela cidade.",
+          description:
+            "Blog visual com curadoria pessoal de restaurantes em São Paulo. Interface focada em experiência de leitura, com recomendações e roteiros gastronômicos pela cidade.",
           tags: ["HTML", "CSS", "React", "TypeScript"],
           deployLink: "https://guia-pi.vercel.app/",
           repoLink: "https://github.com/Dev-BrunoOliveira/GUIA",
@@ -73,7 +89,8 @@ const translations: Record<Language, any> = {
         },
         {
           title: "Concurso TJ",
-          description: "Quiz interativo e gratuito para candidatos ao cargo de Escrevente do TJ-SP. Desenvolvido como alternativa acessível às plataformas pagas do mercado.",
+          description:
+            "Quiz interativo e gratuito para candidatos ao cargo de Escrevente do TJ-SP. Desenvolvido como alternativa acessível às plataformas pagas do mercado.",
           tags: ["HTML", "CSS", "JavaScript"],
           deployLink: "https://concurso-nine.vercel.app/",
           repoLink: "https://github.com/Dev-BrunoOliveira/CONCURSO",
@@ -81,7 +98,8 @@ const translations: Record<Language, any> = {
         },
         {
           title: "Dinaflix",
-          description: "Clone da interface da Netflix com foco em fidelidade visual, layout de streaming e micro-interações. Estudo prático de UI complexa e experiência imersiva.",
+          description:
+            "Clone da interface da Netflix com foco em fidelidade visual, layout de streaming e micro-interações. Estudo prático de UI complexa e experiência imersiva.",
           tags: ["React", "TypeScript", "Vite", "CSS"],
           deployLink: "https://dinaflixpremium.vercel.app/",
           repoLink: "https://github.com/Dev-BrunoOliveira/DINAFLIXPREMIUM",
@@ -89,7 +107,8 @@ const translations: Record<Language, any> = {
         },
         {
           title: "Vitrine Artística",
-          description: "Galeria digital para artistas exibirem ilustrações e expandirem alcance além do público local. Conceito voltado para transformar seguidores em potenciais compradores.",
+          description:
+            "Galeria digital para artistas exibirem ilustrações e expandirem alcance além do público local. Conceito voltado para transformar seguidores em potenciais compradores.",
           tags: ["React", "CSS", "TypeScript"],
           deployLink: "https://galeria-sigma-ten.vercel.app/",
           repoLink: "https://github.com/Dev-BrunoOliveira/GALERIA",
@@ -97,7 +116,8 @@ const translations: Record<Language, any> = {
         },
         {
           title: "Site Tesla",
-          description: "Recriação da landing page da Tesla como estudo de design minimalista e front-end. Foco em UX imersiva e animações suaves fiéis à estética da marca.",
+          description:
+            "Recriação da landing page da Tesla como estudo de design minimalista e front-end. Foco em UX imersiva e animações suaves fiéis à estética da marca.",
           tags: ["HTML", "CSS", "JavaScript"],
           deployLink: "https://tesla-sigma-peach.vercel.app",
           repoLink: "https://github.com/Dev-BrunoOliveira/TESLA",
@@ -105,7 +125,8 @@ const translations: Record<Language, any> = {
         },
         {
           title: "Pizzaria Donatello",
-          description: "Landing page comercial para pizzaria fictícia com apresentação de produtos, serviços e contato em página única. Interface convidativa focada em conversão.",
+          description:
+            "Landing page comercial para pizzaria fictícia com apresentação de produtos, serviços e contato em página única. Interface convidativa focada em conversão.",
           tags: ["React", "Vite", "JavaScript", "CSS"],
           deployLink: "https://pizzaria-six-gray.vercel.app/",
           repoLink: "https://github.com/Dev-BrunoOliveira/PIZZARIA",
@@ -113,7 +134,8 @@ const translations: Record<Language, any> = {
         },
         {
           title: "Retro Games",
-          description: "Jogo clássico desenvolvido para praticar JavaScript puro, resgatando a estética e jogabilidade dos títulos icônicos dos anos 80 e 90.",
+          description:
+            "Jogo clássico desenvolvido para praticar JavaScript puro, resgatando a estética e jogabilidade dos títulos icônicos dos anos 80 e 90.",
           tags: ["HTML", "CSS", "JavaScript", "Canvas"],
           deployLink: "https://snake-game-eta-weld.vercel.app/",
           repoLink: "https://github.com/Dev-BrunoOliveira/SNAKE-GAME",
@@ -121,29 +143,50 @@ const translations: Record<Language, any> = {
         },
         {
           title: "Calculadora de Notas",
-          description: "Calculadora desenvolvida para apurar notas das atividades da faculdade e indicar aprovação ou reprovação. Compartilhada para ajudar outros estudantes da mesma grade.",
+          description:
+            "Calculadora desenvolvida para apurar notas das atividades da faculdade e indicar aprovação ou reprovação. Compartilhada para ajudar outros estudantes da mesma grade.",
           tags: ["HTML", "CSS", "JavaScript"],
           deployLink: "https://calculadora-de-notas-jade.vercel.app/",
           repoLink: "https://github.com/Dev-BrunoOliveira/CALCULADORA-DE-NOTAS",
           image: "/IMG/CALCULADORADENOTAS.png",
         },
-      ]
+      ],
     },
     techs: {
       title: "Minhas Principais Stacks",
       pillars: [
-        { icon: "🖥️", title: "Full Stack", description: "Do front ao back, construindo aplicações completas com React, TypeScript e FastAPI." },
-        { icon: "🎨", title: "UI / UX", description: "Background em design e tatuagem que molda cada detalhe de interface e experiência." },
-        { icon: "🤖", title: "IA & Automação", description: "Fluxos inteligentes com n8n, integração com LLMs e automação de processos reais." },
-        { icon: "🗄️", title: "Banco de Dados", description: "Modelagem e integração com Supabase, PostgreSQL, MySQL e Firebase." },
+        {
+          icon: "🖥️",
+          title: "Full Stack",
+          description:
+            "Do front ao back, construindo aplicações completas com React, TypeScript e FastAPI.",
+        },
+        {
+          icon: "🎨",
+          title: "UI / UX",
+          description:
+            "Background em design e tatuagem que molda cada detalhe de interface e experiência.",
+        },
+        {
+          icon: "🤖",
+          title: "IA & Automação",
+          description:
+            "Fluxos inteligentes com n8n, integração com LLMs e automação de processos reais.",
+        },
+        {
+          icon: "🗄️",
+          title: "Banco de Dados",
+          description:
+            "Modelagem e integração com Supabase, PostgreSQL, MySQL e Firebase.",
+        },
       ],
       categories: {
         frontend: "Frontend",
         backend: "Backend",
         database: "Banco de Dados",
         cloud: "Cloud & DevOps",
-        ai: "Automação & IA"
-      }
+        ai: "Automação & IA",
+      },
     },
     contact: {
       title: "Contato",
@@ -158,8 +201,8 @@ const translations: Record<Language, any> = {
       sendBtn: "Enviar Mensagem",
     },
     footer: {
-      rights: "Direitos reservados ao desenvolvedor Bruno Oliveira"
-    }
+      rights: "Direitos reservados ao desenvolvedor Bruno Oliveira",
+    },
   },
   en: {
     header: {
@@ -170,7 +213,8 @@ const translations: Record<Language, any> = {
     },
     hero: {
       title: "FullStack Bruno Oliveira",
-      description: "I develop interfaces that combine back-end logic with the visual sensibility of a former designer.",
+      description:
+        "I develop interfaces that combine back-end logic with the visual sensibility of a former designer.",
       viewProjects: "View projects",
     },
     about: {
@@ -191,7 +235,8 @@ const translations: Record<Language, any> = {
       data: [
         {
           title: "Life Insurance",
-          description: "Landing page for a life insurance company with a focus on conversion. Clean design with benefit sections, testimonials, and contact form. Developed with React and TypeScript.",
+          description:
+            "Landing page for a life insurance company with a focus on conversion. Clean design with benefit sections, testimonials, and contact form. Developed with React and TypeScript.",
           tags: ["React", "CSS", "TypeScript"],
           deployLink: "https://corretora-zeta.vercel.app/",
           repoLink: "https://github.com/Dev-BrunoOliveira/CORRETORA",
@@ -199,7 +244,8 @@ const translations: Record<Language, any> = {
         },
         {
           title: "Financial Control",
-          description: "Personal finance app for tracking income and expenses, featuring Google authentication and Supabase storage. Developed with React, TypeScript and Gemini API.",
+          description:
+            "Personal finance app for tracking income and expenses, featuring Google authentication and Supabase storage. Developed with React, TypeScript and Gemini API.",
           tags: ["React", "TypeScript", "CSS", "Supabase", "Gemini API"],
           deployLink: "https://carteira-self.vercel.app/",
           repoLink: "https://github.com/Dev-BrunoOliveira/CARTEIRA",
@@ -207,15 +253,26 @@ const translations: Record<Language, any> = {
         },
         {
           title: "T-Shirt Store",
-          description: "Custom print t-shirt e-commerce, user authentication and MySQL database. Project focused on API consumption and fluid purchasing flow.",
+          description:
+            "Custom print t-shirt e-commerce, user authentication and MySQL database. Project focused on API consumption and fluid purchasing flow.",
           tags: ["React", "TypeScript", "MySQL", "CSS"],
           deployLink: "https://laranjodina.vercel.app/",
           repoLink: "https://github.com/Dev-BrunoOliveira/STORE",
           image: "/IMG/Loja.webp",
         },
         {
+          title: "Laranjolingo",
+          description:
+            "A fun way to learn English featuring interactive exercises, gamification, and personalized content. Heavily inspired by Duolingo, it offers a more playful approach tailored to the user experience.",
+          tags: ["React", "TypeScript", "CSS"],
+          deployLink: "https://laranjolingo.vercel.app/",
+          repoLink: "https://github.com/Dev-BrunoOliveira/ENGLISH",
+          image: "/IMG/Laranjolingo.webp",
+        },
+        {
           title: "Restaurant Guide",
-          description: "Visual blog with personal curation of restaurants in São Paulo. Interface focused on reading experience, with recommendations and gastronomic itineraries.",
+          description:
+            "Visual blog with personal curation of restaurants in São Paulo. Interface focused on reading experience, with recommendations and gastronomic itineraries.",
           tags: ["HTML", "CSS", "React", "TypeScript"],
           deployLink: "https://guia-pi.vercel.app/",
           repoLink: "https://github.com/Dev-BrunoOliveira/GUIA",
@@ -223,7 +280,8 @@ const translations: Record<Language, any> = {
         },
         {
           title: "Court Contest",
-          description: "Interactive and free quiz for candidates to the SP Court Clerk position. Developed as an accessible alternative to paid platforms in the market.",
+          description:
+            "Interactive and free quiz for candidates to the SP Court Clerk position. Developed as an accessible alternative to paid platforms in the market.",
           tags: ["HTML", "CSS", "JavaScript"],
           deployLink: "https://concurso-nine.vercel.app/",
           repoLink: "https://github.com/Dev-BrunoOliveira/CONCURSO",
@@ -231,7 +289,8 @@ const translations: Record<Language, any> = {
         },
         {
           title: "Dinaflix",
-          description: "Netflix interface clone focusing on visual fidelity, streaming layout and micro-interactions. Practical study of complex UI and immersive experience.",
+          description:
+            "Netflix interface clone focusing on visual fidelity, streaming layout and micro-interactions. Practical study of complex UI and immersive experience.",
           tags: ["React", "TypeScript", "Vite", "CSS"],
           deployLink: "https://dinaflixpremium.vercel.app/",
           repoLink: "https://github.com/Dev-BrunoOliveira/DINAFLIXPREMIUM",
@@ -239,7 +298,8 @@ const translations: Record<Language, any> = {
         },
         {
           title: "Artistic Showcase",
-          description: "Digital gallery for artists to display illustrations and expand reach beyond local audience. Concept aimed at turning followers into potential buyers.",
+          description:
+            "Digital gallery for artists to display illustrations and expand reach beyond local audience. Concept aimed at turning followers into potential buyers.",
           tags: ["React", "CSS", "TypeScript"],
           deployLink: "https://galeria-sigma-ten.vercel.app/",
           repoLink: "https://github.com/Dev-BrunoOliveira/GALERIA",
@@ -247,7 +307,8 @@ const translations: Record<Language, any> = {
         },
         {
           title: "Tesla Site",
-          description: "Recreation of Tesla's landing page as a study in minimalist design and front-end. Focus on immersive UX and smooth animations faithful to the brand's aesthetic.",
+          description:
+            "Recreation of Tesla's landing page as a study in minimalist design and front-end. Focus on immersive UX and smooth animations faithful to the brand's aesthetic.",
           tags: ["HTML", "CSS", "JavaScript"],
           deployLink: "https://tesla-sigma-peach.vercel.app",
           repoLink: "https://github.com/Dev-BrunoOliveira/TESLA",
@@ -255,7 +316,8 @@ const translations: Record<Language, any> = {
         },
         {
           title: "Donatello Pizzeria",
-          description: "Commercial landing page for a fictional pizzeria presenting products, services and contact info in a single page. Inviting interface focused on conversion.",
+          description:
+            "Commercial landing page for a fictional pizzeria presenting products, services and contact info in a single page. Inviting interface focused on conversion.",
           tags: ["React", "Vite", "JavaScript", "CSS"],
           deployLink: "https://pizzaria-six-gray.vercel.app/",
           repoLink: "https://github.com/Dev-BrunoOliveira/PIZZARIA",
@@ -263,7 +325,8 @@ const translations: Record<Language, any> = {
         },
         {
           title: "Retro Games",
-          description: "Classic game developed to practice pure JavaScript, rescuing the aesthetic and gameplay of iconic titles from the 80s and 90s.",
+          description:
+            "Classic game developed to practice pure JavaScript, rescuing the aesthetic and gameplay of iconic titles from the 80s and 90s.",
           tags: ["HTML", "CSS", "JavaScript", "Canvas"],
           deployLink: "https://snake-game-eta-weld.vercel.app/",
           repoLink: "https://github.com/Dev-BrunoOliveira/SNAKE-GAME",
@@ -271,29 +334,50 @@ const translations: Record<Language, any> = {
         },
         {
           title: "Grade Calculator",
-          description: "Calculator developed to compute college activity grades and indicate pass or fail status. Shared to help other students in the same curriculum.",
+          description:
+            "Calculator developed to compute college activity grades and indicate pass or fail status. Shared to help other students in the same curriculum.",
           tags: ["HTML", "CSS", "JavaScript"],
           deployLink: "https://calculadora-de-notas-jade.vercel.app/",
           repoLink: "https://github.com/Dev-BrunoOliveira/CALCULADORA-DE-NOTAS",
           image: "/IMG/CALCULADORADENOTAS.png",
         },
-      ]
+      ],
     },
     techs: {
       title: "My Main Stacks",
       pillars: [
-        { icon: "🖥️", title: "Full Stack", description: "From front to back, building complete applications with React, TypeScript and FastAPI." },
-        { icon: "🎨", title: "UI / UX", description: "Background in design and tattooing that shapes every detail of the interface and experience." },
-        { icon: "🤖", title: "AI & Automation", description: "Smart flows with n8n, LLM integration and automation of real processes." },
-        { icon: "🗄️", title: "Database", description: "Modeling and integration with Supabase, PostgreSQL, MySQL and Firebase." },
+        {
+          icon: "🖥️",
+          title: "Full Stack",
+          description:
+            "From front to back, building complete applications with React, TypeScript and FastAPI.",
+        },
+        {
+          icon: "🎨",
+          title: "UI / UX",
+          description:
+            "Background in design and tattooing that shapes every detail of the interface and experience.",
+        },
+        {
+          icon: "🤖",
+          title: "AI & Automation",
+          description:
+            "Smart flows with n8n, LLM integration and automation of real processes.",
+        },
+        {
+          icon: "🗄️",
+          title: "Database",
+          description:
+            "Modeling and integration with Supabase, PostgreSQL, MySQL and Firebase.",
+        },
       ],
       categories: {
         frontend: "Frontend",
         backend: "Backend",
         database: "Database",
         cloud: "Cloud & DevOps",
-        ai: "Automation & AI"
-      }
+        ai: "Automation & AI",
+      },
     },
     contact: {
       title: "Contact",
@@ -308,9 +392,9 @@ const translations: Record<Language, any> = {
       sendBtn: "Send Message",
     },
     footer: {
-      rights: "All rights reserved to the developer Bruno Oliveira"
-    }
-  }
+      rights: "All rights reserved to the developer Bruno Oliveira",
+    },
+  },
 };
 
 export function LanguageProvider({ children }: { children: ReactNode }) {
