@@ -73,7 +73,7 @@ const translations: Record<Language, any> = {
           title: "Laranjolingo",
           description:
             "Uma forma divertida de aprender inglês com exercícios interativos, gamificação e conteúdo personalizado.Me inspirei bastante no duolingo, mas com uma abordagem mais lúdica e voltada para a experiência do usuário.",
-          tags: ["React", "TypeScript", "CSS"],
+          tags: ["React", "TypeScript", "CSS" , "Supabase", "Gemini API"],
           deployLink: "https://laranjolingo.vercel.app/",
           repoLink: "https://github.com/Dev-BrunoOliveira/ENGLISH",
           image: "/IMG/Laranjolingo.webp",
@@ -264,7 +264,7 @@ const translations: Record<Language, any> = {
           title: "Laranjolingo",
           description:
             "A fun way to learn English featuring interactive exercises, gamification, and personalized content. Heavily inspired by Duolingo, it offers a more playful approach tailored to the user experience.",
-          tags: ["React", "TypeScript", "CSS"],
+          tags: ["React", "TypeScript", "CSS" , "Supabase", "Gemini API"],
           deployLink: "https://laranjolingo.vercel.app/",
           repoLink: "https://github.com/Dev-BrunoOliveira/ENGLISH",
           image: "/IMG/Laranjolingo.webp",
