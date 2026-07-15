@@ -135,11 +135,11 @@ const translations: Record<Language, any> = {
         {
           title: "Retro Games",
           description:
-            "Jogo clássico desenvolvido para praticar JavaScript puro, resgatando a estética e jogabilidade dos títulos icônicos dos anos 80 e 90.",
+            "Jogos clássicos desenvolvidos para praticar JavaScript puro, resgatando a estética e jogabilidade dos títulos icônicos dos anos 80 e 90.",
           tags: ["HTML", "CSS", "JavaScript", "Canvas"],
           deployLink: "https://snake-game-eta-weld.vercel.app/",
           repoLink: "https://github.com/Dev-BrunoOliveira/SNAKE-GAME",
-          image: "/IMG/retrogames.png",
+          image: "/IMG/retrogames.webp",
         },
         {
           title: "Calculadora de Notas",
