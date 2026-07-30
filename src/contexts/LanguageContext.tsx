@@ -64,7 +64,7 @@ const translations: Record<Language, any> = {
           title: "Loja de Camisetas",
           description:
             "E-commerce de camisetas com estampas personalizadas, autenticação de usuários e banco de dados MySQL. Projeto focado em consumo de API e fluxo de compra fluido.",
-          tags: ["React", "TypeScript", "MySQL", "CSS"],
+          tags: ["React", "TypeScript", "CSS", "Supabase", "MySQL"],
           deployLink: "https://laranjodina.vercel.app/",
           repoLink: "https://github.com/Dev-BrunoOliveira/STORE",
           image: "/IMG/Loja.webp",
@@ -82,10 +82,10 @@ const translations: Record<Language, any> = {
           title: "Guia de Restaurantes",
           description:
             "Blog visual com curadoria pessoal de restaurantes em São Paulo. Interface focada em experiência de leitura, com recomendações e roteiros gastronômicos pela cidade.",
-          tags: ["HTML", "CSS", "React", "TypeScript"],
+          tags: ["React", "TypeScript" , "CSS" , "Node.js"],
           deployLink: "https://guia-pi.vercel.app/",
           repoLink: "https://github.com/Dev-BrunoOliveira/GUIA",
-          image: "/IMG/Guia.webp",
+          image: "/IMG/GuiaDark.webp",
         },
         {
           title: "Concurso TJ",
