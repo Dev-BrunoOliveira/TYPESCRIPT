@@ -105,7 +105,7 @@ function Techs() {
                   viewport={{ once: true }}
                   transition={{ duration: 0.3, delay: idx * 0.08 }}
                 >
-                  <img src={tech.imgSrc} alt={`Logo do ${tech.name}`} />
+                  <img src={tech.imgSrc} alt={`Logo do ${tech.name}`} loading="lazy" decoding="async" />
                   <span>{tech.name}</span>
                 </motion.div>
               ))}

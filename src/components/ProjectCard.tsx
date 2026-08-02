@@ -19,7 +19,7 @@ function ProjectCard({ project, index }: Props) {
       transition={{ duration: 0.6, delay: index * 0.1 }}
     >
       <div className="project-image">
-        <img src={project.image} alt={project.title} />
+        <img src={project.image} alt={project.title} loading="lazy" decoding="async" />
       </div>
       <div className="project-details">
         <h2>{project.title}</h2>
