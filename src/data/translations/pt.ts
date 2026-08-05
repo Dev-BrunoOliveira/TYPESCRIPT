@@ -156,7 +156,7 @@ export const pt = {
         icon: "🤖",
         title: "IA & Automação",
         description:
-          "Fluxos inteligentes com n8n, integração com LLMs e automação de processos reais.",
+          "Fluxos inteligentes com IA, integração com LLMs e automação de processos reais.",
       },
       {
         icon: "🗄️",

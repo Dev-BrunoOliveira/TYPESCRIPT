@@ -156,7 +156,7 @@ export const en = {
         icon: "🤖",
         title: "AI & Automation",
         description:
-          "Smart flows with n8n, LLM integration and automation of real processes.",
+          "Smart flows with AI, LLM integration and automation of real processes.",
       },
       {
         icon: "🗄️",

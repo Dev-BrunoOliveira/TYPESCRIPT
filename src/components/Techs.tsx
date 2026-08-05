@@ -46,7 +46,6 @@ const techCategories: TechCategory[] = [
   {
     categoryKey: "ai",
     techs: [
-      { name: "n8n", imgSrc: "/IMG/techs/n8n.png" },
       { name: "Gemini API", imgSrc: "/IMG/techs/geminiAPI.png" },
       { name: "ChatGPT API", imgSrc: "/IMG/techs/chatgpt.png" },
       { name: "Claude", imgSrc: "/IMG/techs/claude.jpg" },
