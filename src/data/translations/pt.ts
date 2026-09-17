@@ -10,6 +10,9 @@ export const pt = {
     description:
       "Desenvolvo interfaces que unem lógica de back-end com sensibilidade visual de quem veio do design.",
     viewProjects: "Ver projetos",
+    downloadCv: "Baixar CV",
+    linkedin: "LinkedIn",
+    github: "GitHub",
   },
   about: {
     title: "Sobre",

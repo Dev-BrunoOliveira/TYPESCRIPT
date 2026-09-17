@@ -10,6 +10,9 @@ export const en = {
     description:
       "I develop interfaces that combine back-end logic with the visual sensibility of a former designer.",
     viewProjects: "View projects",
+    downloadCv: "Download CV",
+    linkedin: "LinkedIn",
+    github: "GitHub",
   },
   about: {
     title: "About",
