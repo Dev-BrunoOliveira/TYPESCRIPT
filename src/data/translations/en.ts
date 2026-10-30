@@ -16,7 +16,7 @@ export const en = {
   },
   about: {
     title: "About",
-    p1: "I am 30 years old and live in São Paulo, Brazil. I am currently studying Systems Analysis and Development at FAM University, expected to graduate in August 2027.",
+    p1: "I am 31 years old and live in São Paulo, Brazil. I am currently studying Systems Analysis and Development at FAM University, expected to graduate in August 2027.",
     p2: "My journey with technology has always been driven by curiosity and creation. I started my career in graphic design and image editing at an agency, where I developed the ability to unite aesthetics, usability, and logic.",
     p3: "Prior to that, I worked as a tattoo artist for seven years, an experience that refined my sense of visual composition, colors, precision, and attention to detail.",
     p4: "Today, I apply this creative perspective to front-end development, building modern, responsive interfaces focused on user experience using technologies like React, TypeScript, Tailwind CSS, and Vite.",

@@ -16,7 +16,7 @@ export const pt = {
   },
   about: {
     title: "Sobre",
-    p1: "Tenho 30 anos e resido em São Paulo, Brasil. Sou estudante de Análise e Desenvolvimento de Sistemas na Faculdade FAM, com previsão de conclusão em agosto de 2027.",
+    p1: "Tenho 31 anos e resido em São Paulo, Brasil. Sou estudante de Análise e Desenvolvimento de Sistemas na Faculdade FAM, com previsão de conclusão em agosto de 2027.",
     p2: "Minha trajetória com tecnologia sempre foi movida pela curiosidade e pela criação. Iniciei minha carreira no design gráfico e edição de imagens, atuando em agência, onde desenvolvi a capacidade de unir estética, usabilidade e lógica.",
     p3: "Antes disso, trabalhei por sete anos como tatuador, experiência que refinou meu senso de composição visual, cores, precisão e atenção aos detalhes.",
     p4: "Hoje, aplico esse olhar criativo no desenvolvimento front-end, criando interfaces modernas, responsivas e focadas em experiência do usuário, utilizando tecnologias como React, TypeScript, Tailwind CSS e Vite.",
